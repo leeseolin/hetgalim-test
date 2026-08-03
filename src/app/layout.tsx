@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "한국인이 자주 헷갈리는 맞춤법과 표현을 짧은 퀴즈로 확인하는 사이트입니다.",
   verification: {
     other: {
-      "naver-site-verification": "fcf3f43aa0252b53323ef20792adc123e2503d5a"
+      "naver-site-verification": "37ba0bde148f902a4bbcd1c9dc3ae4ebf746b3c7"
     }
   },
   openGraph: {
