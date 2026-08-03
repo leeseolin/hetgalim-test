@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { quizzes } from "@/f4_entities/quiz/quizzes";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hetgalim-test-chi.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hetgalim-quiz.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = ["", "/about", "/privacy", "/terms"].map((path) => ({
