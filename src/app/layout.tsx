@@ -4,7 +4,7 @@ import { Header } from "@/f5_shared/ui/Header";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://hetgalim-test.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://hetgalim-test-chi.vercel.app"),
   title: {
     default: "헷갈리는 말 테스트",
     template: "%s | 헷갈리는 말 테스트"
