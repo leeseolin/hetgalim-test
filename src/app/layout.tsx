@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Footer } from "@/f5_shared/ui/Footer";
 import { Header } from "@/f5_shared/ui/Header";
 import "./globals.css";
@@ -35,13 +34,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>
-        <Script
+      <head>
+        <script
           async
           crossOrigin="anonymous"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5220732377881882"
-          strategy="beforeInteractive"
         />
+      </head>
+      <body>
         <Header />
         {children}
         <Footer />
