@@ -12,7 +12,8 @@
 
 ## 주요 기능
 
-- 표현별 10문제 객관식 퀴즈와 진행률 표시
+- 핵심 표현별 10문제 객관식 퀴즈와 진행률 표시
+- 자주 틀리는 20개 표현 종합 테스트와 표현별 복습 가이드
 - 점수 계산, 오답 모아보기, 문제별 해설
 - 퀴즈별 10초 요약, 구분법, 실제 예문
 - 관련 테스트 추천과 모바일 반응형 화면
@@ -31,7 +32,7 @@
 
 ### 검색을 고려한 페이지 생성
 
-각 퀴즈는 고유 URL과 제목, 설명, 키워드, Open Graph 정보를 가집니다. 현재 30개의 퀴즈 경로를 포함해 총 38개 페이지가 빌드 시 정적으로 생성됩니다.
+각 핵심 퀴즈는 고유 URL과 제목, 설명, 키워드, Open Graph 정보를 가집니다. 짧은 표현 20개는 하나의 종합 가이드로 묶어 유사한 페이지가 반복되지 않도록 구성했습니다.
 
 ## 프로젝트 구조
 
@@ -69,7 +70,7 @@ pnpm lint
 
 ## 콘텐츠 추가
 
-`src/f4_entities/quiz/quizzes.ts`에 `Quiz` 객체를 추가합니다. `slug`, `keyword`, `title`, `description`, `summary`, `tenSecondSummary`, `seoContent`, `examples`, `questions`가 필요합니다.
+깊이 있는 개별 테스트는 `src/f4_entities/quiz/quizzes.ts`에, 짧게 익히는 표현은 `src/f4_entities/quiz/additionalQuizzes.ts`에 추가합니다. `slug`, `keyword`, `title`, `description`, `summary`, `tenSecondSummary`, `seoContent`, `examples`, `questions`가 필요합니다.
 
 ## 안내
 

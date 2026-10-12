@@ -11,7 +11,7 @@ export function QuizCard({ quiz }: QuizCardProps) {
       <div className="mb-4 flex items-start justify-between gap-3">
         <h3 className="min-w-0 text-[1.45rem] font-black leading-tight tracking-normal text-[var(--foreground)]">{quiz.name}</h3>
         <span className="shrink-0 whitespace-nowrap rounded-full bg-[var(--accent-soft)] px-3 py-2 text-xs font-bold leading-none text-[var(--accent-strong)]">
-          10문제
+          {quiz.questions.length}문제
         </span>
       </div>
       <p className="text-base font-black text-[var(--accent-strong)]">{quiz.keyword}</p>

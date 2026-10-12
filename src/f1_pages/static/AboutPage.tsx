@@ -26,12 +26,29 @@ export function AboutPage() {
       </section>
       <section aria-labelledby="direction" className="mt-8">
         <h2 id="direction" className="text-xl font-bold text-[var(--foreground)]">
-          콘텐츠 방향
+          콘텐츠 작성과 검수 기준
         </h2>
         <p className="mt-3">
-          앞으로 되/돼, 안/않처럼 검색 수요가 높은 맞춤법뿐 아니라 직장 생활, 학교생활, 일상 대화에서 자주 쓰는
-          표현을 계속 추가할 예정입니다.
+          모든 설명은 단순히 정답만 제시하지 않고, 문장 안에서 구분할 수 있는 기준과 실제 예문을 함께 제공합니다.
+          확인한 국립국어원 상세 답변과 사전 표제어를 각 설명에 연결합니다. 문항의 정답·선택지·완성 문장을 함께 대조하고,
+          공식 상세 근거를 확인하지 못한 항목은 해당 설명에 표시합니다.
         </p>
+      </section>
+      <section aria-labelledby="operator" className="mt-8">
+        <h2 id="operator" className="text-xl font-bold text-[var(--foreground)]">
+          운영 정보와 오류 제보
+        </h2>
+        <p className="mt-3">
+          헷갈리는 말 테스트는 한국어 표현을 실제 문장으로 연습할 수 있도록 개인이 운영하는 학습 프로젝트입니다.
+          잘못된 정답, 설명이 모호한 문항, 접근성 문제를 발견했다면 아래 공개 저장소의 이슈로 알려주세요. 확인 후 수정 내역을
+          사이트에 반영합니다.
+        </p>
+        <p className="mt-3">
+          <a className="font-bold text-[var(--accent-strong)] underline underline-offset-4" href="https://github.com/leeseolin/hetgalim-test/issues" target="_blank" rel="noreferrer">
+            오류 및 개선 의견 보내기 ↗
+          </a>
+        </p>
+        <p className="mt-3 text-sm">콘텐츠 검토일: 2026년 10월 12일 — 핵심 퀴즈 100문항과 가이드 연습 100문항 대조, 오답 이유·비교 예문 보완, 모호한 출제 조건 수정.</p>
       </section>
     </StaticPageShell>
   );

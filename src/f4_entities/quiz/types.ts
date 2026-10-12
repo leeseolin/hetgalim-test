@@ -28,13 +28,16 @@ export type QuizSlug =
   | "tongjjaero-tongchaero"
   | "huihan-huian"
   | "eoi-eoui"
-  | "seolgeoji-seolgeoji";
+  | "seolgeoji-seolgeoji"
+  | "common-mistakes";
 
 export type QuizQuestion = {
   question: string;
   choices: string[];
   answer: string;
   explanation: string;
+  wrongExplanation?: string;
+  reviewHref?: string;
 };
 
 export type Quiz = {

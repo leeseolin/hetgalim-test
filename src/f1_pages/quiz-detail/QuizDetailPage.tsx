@@ -1,6 +1,11 @@
 import type { Quiz } from "@/f4_entities/quiz/types";
+import { learningNotes } from "@/f4_entities/quiz/learningNotes";
+import { LearningNote } from "@/f2_widgets/quiz-learning/LearningNote";
+import { AdSenseScript } from "@/f5_shared/ui/AdSenseScript";
 import { getRelatedQuizzes } from "@/f4_entities/quiz/quizzes";
 import { QuizPlayer } from "@/f2_widgets/quiz-player/QuizPlayer";
+import { ContentSourceNote } from "@/f2_widgets/quiz-learning/ContentSourceNote";
+import { QuizAnswerGuide } from "@/f2_widgets/quiz-learning/QuizAnswerGuide";
 import { RelatedQuizzes } from "@/f5_shared/ui/RelatedQuizzes";
 
 type QuizDetailPageProps = {
@@ -12,6 +17,7 @@ export function QuizDetailPage({ quiz }: QuizDetailPageProps) {
 
   return (
     <main>
+      <AdSenseScript />
       <article className="mx-auto max-w-4xl px-4 py-10 sm:px-6 sm:py-14">
         <header className="mb-8 border-b border-[var(--line)] pb-8">
           <p className="text-sm font-bold text-[var(--accent-strong)]">{quiz.keyword}</p>
@@ -26,11 +32,12 @@ export function QuizDetailPage({ quiz }: QuizDetailPageProps) {
           <p className="mt-3 text-lg leading-8 text-[var(--muted)]">{quiz.tenSecondSummary}</p>
         </section>
 
-        <section aria-labelledby="quiz-description" className="mt-8">
+        <section id="rule-guide" aria-labelledby="quiz-description" className="mt-8 scroll-mt-24">
           <h2 id="quiz-description" className="text-2xl font-bold">
             헷갈리는 이유와 구분법
           </h2>
           <p className="mt-4 whitespace-pre-line leading-8 text-[var(--muted)]">{quiz.seoContent}</p>
+          {learningNotes[quiz.slug] && <LearningNote note={learningNotes[quiz.slug]} />}
         </section>
 
         <section aria-labelledby="examples" className="mt-8 rounded-md border border-[var(--line)] bg-[#fbfbf8] p-5 sm:p-7">
@@ -57,6 +64,9 @@ export function QuizDetailPage({ quiz }: QuizDetailPageProps) {
           </div>
           <QuizPlayer quiz={quiz} />
         </section>
+
+        <QuizAnswerGuide questions={quiz.questions} />
+        <ContentSourceNote />
 
         <RelatedQuizzes quizzes={relatedQuizzes} />
       </article>

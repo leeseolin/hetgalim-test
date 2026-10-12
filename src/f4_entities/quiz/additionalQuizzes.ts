@@ -13,11 +13,11 @@ export const additionalQuizzes: Quiz[] = [
       "낫다/낳다는 발음이 비슷해도 의미가 분명히 다릅니다. '낫다'는 감기나 상처가 좋아지는 일, 또는 둘을 비교했을 때 더 좋다는 뜻입니다. '감기가 낫다', '이 방법이 더 낫다'처럼 씁니다. '낳다'는 아이를 출산하거나 어떤 결과를 만들어 낸다는 뜻입니다. '아이를 낳다', '노력이 좋은 결과를 낳다'가 자연스럽습니다. 글을 쓸 때는 병과 비교인지, 출산과 결과 생성인지 먼저 확인하면 됩니다.",
     examples: ["감기가 다 나았다.", "이 선택이 더 낫다.", "아기를 낳았다.", "노력이 성과를 낳았다.", "빨리 낫길 바란다."],
     questions: [
-      { question: "감기가 거의 다 ___.", choices: ["나았다", "낳았다"], answer: "나았다", explanation: "병이 좋아진다는 뜻은 '낫다'입니다." },
-      { question: "이 방법이 저 방법보다 더 ___.", choices: ["낫다", "낳다"], answer: "낫다", explanation: "비교해서 더 좋다는 뜻이면 '낫다'를 씁니다." },
-      { question: "그 부부는 건강한 아이를 ___.", choices: ["나았다", "낳았다"], answer: "낳았다", explanation: "아이를 출산했다는 뜻은 '낳았다'입니다." },
-      { question: "작은 실수가 큰 문제를 ___.", choices: ["나았다", "낳았다"], answer: "낳았다", explanation: "결과를 만들어 냈다는 뜻은 '낳다'를 씁니다." },
-      { question: "상처가 빨리 ___으면 좋겠다.", choices: ["나", "낳"], answer: "나", explanation: "'낫다'가 활용되어 '나으면'이 됩니다." }
+      { question: "감기가 거의 다 ___.", choices: ["나았다", "낳았다"], answer: "나았다", explanation: "병이 좋아진다는 뜻은 '낫다'입니다.", wrongExplanation: "'낳았다'는 출산이나 결과 발생입니다. 병이 좋아진 '낫다'는 과거형에서 ㅅ이 빠져 '나았다'가 됩니다.", reviewHref: "/guide/common-mistakes#natda-nata" },
+      { question: "이 방법이 저 방법보다 더 ___.", choices: ["낫다", "낳다"], answer: "낫다", explanation: "비교해서 더 좋다는 뜻이면 '낫다'를 씁니다.", wrongExplanation: "'낳다'는 결과나 아이를 생기게 한다는 뜻입니다. 두 방법의 우열을 비교하는 말은 '낫다'입니다.", reviewHref: "/guide/common-mistakes#natda-nata" },
+      { question: "그 부부는 건강한 아이를 ___.", choices: ["나았다", "낳았다"], answer: "낳았다", explanation: "아이를 출산했다는 뜻은 '낳았다'입니다.", wrongExplanation: "'나았다'는 병 회복이나 비교입니다. 아이를 출산한 뜻에서는 ㅎ을 유지한 '낳았다'입니다.", reviewHref: "/guide/common-mistakes#natda-nata" },
+      { question: "작은 실수가 큰 문제를 ___.", choices: ["나았다", "낳았다"], answer: "낳았다", explanation: "결과를 만들어 냈다는 뜻은 '낳다'를 씁니다.", wrongExplanation: "'나았다'로 쓰면 실수가 문제를 생기게 한 뜻이 되지 않습니다. 원인이 결과를 만든 것은 '낳았다'입니다.", reviewHref: "/guide/common-mistakes#natda-nata" },
+      { question: "상처가 빨리 ___으면 좋겠다.", choices: ["나", "낳"], answer: "나", explanation: "'낫다'가 활용되어 '나으면'이 됩니다.", wrongExplanation: "'낳으면'은 출산·결과 발생의 조건입니다. 상처가 회복되기를 바라므로 '나으면'입니다.", reviewHref: "/guide/common-mistakes#natda-nata" }
     ]
   },
   {
@@ -29,14 +29,14 @@ export const additionalQuizzes: Quiz[] = [
     summary: "'-대'는 남에게 들은 말, '-데'는 직접 경험하거나 느낀 말이다.",
     tenSecondSummary: "누가 그렇다고 하더라는 뜻이면 '-대', 내가 직접 보거나 느꼈다는 뜻이면 '-데'를 씁니다.",
     seoContent:
-      "대/데는 말투가 비슷해 댓글과 메시지에서 자주 틀립니다. '-대'는 다른 사람에게 들은 내용을 전달할 때 씁니다. '민수가 내일 온대'는 민수가 온다고 들었다는 뜻입니다. '-데'는 말하는 사람이 직접 경험하거나 느낀 사실을 떠올리며 말할 때 씁니다. '날씨가 정말 춥데'가 아니라 '날씨가 정말 춥데'는 구어적으로 보일 수 있지만 표준적 구분에서는 직접 경험의 감탄은 '-데'입니다. 문장 속 정보의 출처가 남인지 나인지가 핵심입니다.",
+      "대/데는 말투가 비슷해 댓글과 메시지에서 자주 틀립니다. '-대'는 다른 사람에게 들은 내용을 전달할 때 씁니다. '민수가 내일 온대'는 민수가 온다고 들었다는 뜻입니다. 반면 '-데'는 말하는 사람이 직접 겪은 일을 떠올리며 말할 때 씁니다. '직접 가 보니 사람이 많데'처럼 정보의 출처가 자신의 경험일 때 사용할 수 있습니다. 전달받은 말인지 직접 확인한 사실인지 구분하는 것이 핵심입니다.",
     examples: ["민수가 내일 온대.", "그 영화 재미있대.", "어제 보니까 사람이 많데.", "직접 먹어 보니 맵데.", "친구가 괜찮대."],
     questions: [
-      { question: "지수가 오늘 늦는__.", choices: ["대", "데"], answer: "대", explanation: "남에게 들은 말을 전하므로 '-대'가 맞습니다." },
-      { question: "직접 가 보니 줄이 길__.", choices: ["대", "데"], answer: "데", explanation: "직접 경험한 사실을 말하므로 '-데'가 맞습니다." },
-      { question: "친구가 그 식당 맛있__.", choices: ["대", "데"], answer: "대", explanation: "친구에게 들은 평가를 전달하는 문장입니다." },
-      { question: "어제 보니까 생각보다 작__.", choices: ["대", "데"], answer: "데", explanation: "말하는 사람이 직접 본 느낌이므로 '-데'를 씁니다." },
-      { question: "선생님이 내일까지 제출하__.", choices: ["래", "데"], answer: "래", explanation: "명령이나 요청을 들은 말로 전할 때는 '-래'가 자연스럽습니다." }
+      { question: "지수가 전화로 늦는다고 했어. 지수가 오늘 늦는__.", choices: ["대", "데"], answer: "대", explanation: "남에게 들은 말을 전하므로 '-대'가 맞습니다.", wrongExplanation: "직접 본 사실을 회상하는 '-데'와 다릅니다. '늦는다고 해'를 전달하므로 '늦는대'입니다.", reviewHref: "/guide/common-mistakes#dae-de" },
+      { question: "직접 가 보니 줄이 길__.", choices: ["대", "데"], answer: "데", explanation: "직접 경험한 사실을 말하므로 '-데'가 맞습니다.", wrongExplanation: "'-대'를 쓰면 타인에게 들은 말이 됩니다. 여기서는 직접 가서 본 경험이므로 '-데'입니다.", reviewHref: "/guide/common-mistakes#dae-de" },
+      { question: "친구에게 들었어. 그 식당 맛있__.", choices: ["대", "데"], answer: "대", explanation: "친구에게 들은 평가를 전달하는 문장입니다.", wrongExplanation: "'-데'는 자기 경험을 회상합니다. 친구의 평가를 전하는 이 문장에서는 '맛있대'입니다.", reviewHref: "/guide/common-mistakes#dae-de" },
+      { question: "어제 보니까 생각보다 작__.", choices: ["대", "데"], answer: "데", explanation: "말하는 사람이 직접 본 느낌이므로 '-데'를 씁니다.", wrongExplanation: "'-대'는 들은 내용의 전달입니다. '어제 보니까'라는 직접 관찰의 단서에는 '-데'입니다.", reviewHref: "/guide/common-mistakes#dae-de" },
+      { question: "선생님이 '내일까지 제출해라'라고 하셨어. 내일까지 제출하__.", choices: ["래", "데"], answer: "래", explanation: "명령이나 요청을 들은 말로 전할 때는 '-래'가 자연스럽습니다.", wrongExplanation: "'-데'는 직접 경험한 사실을 회상합니다. '제출해라'라는 지시의 전달은 '제출하래'입니다.", reviewHref: "/guide/common-mistakes#dae-de" }
     ]
   },
   {
@@ -51,11 +51,11 @@ export const additionalQuizzes: Quiz[] = [
       "든지/던지는 한 글자 차이지만 문장의 의미가 달라집니다. '든지'는 여러 선택지 중 어느 것을 골라도 된다는 뜻입니다. '먹든지 말든지', '가든지 오든지'처럼 씁니다. '던지'는 과거의 경험이나 느낌을 회상할 때 쓰입니다. '얼마나 춥던지 손이 얼었다'처럼 당시 정도를 떠올리는 문장에 맞습니다. 선택 가능성인지 과거 회상인지가 구분 기준입니다.",
     examples: ["가든지 말든지 네가 정해.", "뭘 먹든지 괜찮아.", "얼마나 춥던지 떨렸다.", "비가 어찌나 오던지.", "하든지 말든지 해."],
     questions: [
-      { question: "먹___ 말___ 마음대로 해.", choices: ["든지", "던지"], answer: "든지", explanation: "선택을 나타내므로 '든지'가 맞습니다." },
-      { question: "어제는 얼마나 춥___ 손이 얼었다.", choices: ["든지", "던지"], answer: "던지", explanation: "과거의 정도를 회상하므로 '던지'를 씁니다." },
-      { question: "무엇을 고르___ 결과는 비슷하다.", choices: ["든지", "던지"], answer: "든지", explanation: "어느 선택이든 상관없다는 뜻입니다." },
-      { question: "비가 어찌나 많이 오___ 길이 잠겼다.", choices: ["든지", "던지"], answer: "던지", explanation: "과거 상황을 떠올리는 표현입니다." },
-      { question: "가___ 오___ 미리 알려 줘.", choices: ["든지", "던지"], answer: "든지", explanation: "선택지를 나열하므로 '든지'가 맞습니다." }
+      { question: "먹___ 말___ 마음대로 해.", choices: ["든지", "던지"], answer: "든지", explanation: "선택을 나타내므로 '든지'가 맞습니다.", wrongExplanation: "'-던지'는 과거 정도를 떠올리는 말입니다. 먹고 말고의 선택이므로 두 빈칸 모두 '-든지'입니다.", reviewHref: "/guide/common-mistakes#deunji-deonji" },
+      { question: "어제는 얼마나 춥___ 손이 얼었다.", choices: ["든지", "던지"], answer: "던지", explanation: "과거의 정도를 회상하므로 '던지'를 씁니다.", wrongExplanation: "'-든지'는 선택·무관함을 나타냅니다. '어제 얼마나'라는 과거 정도의 단서에는 '-던지'입니다.", reviewHref: "/guide/common-mistakes#deunji-deonji" },
+      { question: "무엇을 고르___ 결과는 비슷하다.", choices: ["든지", "던지"], answer: "든지", explanation: "어느 선택이든 상관없다는 뜻입니다.", wrongExplanation: "'-던지'로 쓰면 지나간 경험을 떠올리는 뜻이 됩니다. 무엇을 선택해도 같다는 뜻은 '-든지'입니다.", reviewHref: "/guide/common-mistakes#deunji-deonji" },
+      { question: "비가 어찌나 많이 오___ 길이 잠겼다.", choices: ["든지", "던지"], answer: "던지", explanation: "과거 상황을 떠올리는 표현입니다.", wrongExplanation: "비가 온 정도와 그 결과를 회상하고 있습니다. 선택을 나타내는 '-든지'와 다릅니다.", reviewHref: "/guide/common-mistakes#deunji-deonji" },
+      { question: "가___ 오___ 미리 알려 줘.", choices: ["든지", "던지"], answer: "든지", explanation: "선택지를 나열하므로 '든지'가 맞습니다.", wrongExplanation: "지난 동작의 회상이 아니라 갈지 올지 고르는 상황이므로 두 빈칸 모두 '-든지'입니다.", reviewHref: "/guide/common-mistakes#deunji-deonji" }
     ]
   },
   {
@@ -70,11 +70,11 @@ export const additionalQuizzes: Quiz[] = [
       "율/률은 한자어 뒤에서 자주 헷갈리는 표기입니다. 일반적으로 앞말이 모음으로 끝나거나 ㄴ 받침으로 끝나면 '율'을 씁니다. 그래서 '비율', '전율', '백분율'이 맞습니다. 그 밖의 받침 뒤에는 '률'을 쓰는 경우가 많아 '확률', '합격률', '경쟁률'로 적습니다. 단어를 통째로 외우기보다 앞말의 끝소리를 확인하면 실수를 줄일 수 있습니다.",
     examples: ["비율을 계산하다.", "확률이 낮다.", "합격률이 높다.", "백분율로 표시하다.", "경쟁률이 치열하다."],
     questions: [
-      { question: "성공 ___이 높다.", choices: ["율", "률"], answer: "률", explanation: "'성공'은 받침 ㄱ으로 끝나므로 '성공률'이 맞습니다." },
-      { question: "남녀 비___을 조사했다.", choices: ["율", "률"], answer: "율", explanation: "'비'는 모음으로 끝나므로 '비율'을 씁니다." },
-      { question: "합격 ___이 올랐다.", choices: ["율", "률"], answer: "률", explanation: "'합격' 뒤에는 '률'이 붙어 '합격률'이 됩니다." },
-      { question: "백분___로 나타내세요.", choices: ["율", "률"], answer: "율", explanation: "'분'은 ㄴ 받침으로 끝나므로 '백분율'이 맞습니다." },
-      { question: "경쟁 ___이 매우 높다.", choices: ["율", "률"], answer: "률", explanation: "'경쟁'은 받침 ㅇ으로 끝나므로 '경쟁률'입니다." }
+      { question: "성공___이 높다.", choices: ["율", "률"], answer: "률", explanation: "'성공'은 받침 ㅇ으로 끝나므로 '성공률'이 맞습니다.", wrongExplanation: "'성공율'은 ㅇ 받침 뒤에서 율을 잘못 쓴 것입니다. 성공의 마지막 받침은 ㅇ입니다.", reviewHref: "/guide/common-mistakes#yul-ryul" },
+      { question: "남녀 비___을 조사했다.", choices: ["율", "률"], answer: "율", explanation: "'비'는 모음으로 끝나므로 '비율'을 씁니다.", wrongExplanation: "'비률'은 모음 뒤에서 률을 그대로 쓴 잘못된 표기입니다.", reviewHref: "/guide/common-mistakes#yul-ryul" },
+      { question: "합격___이 올랐다.", choices: ["율", "률"], answer: "률", explanation: "'합격' 뒤에는 '률'이 붙어 '합격률'이 됩니다.", wrongExplanation: "'합격율'은 ㄱ 받침 뒤의 표기가 틀렸습니다. 받침을 보고 '합격률'로 씁니다.", reviewHref: "/guide/common-mistakes#yul-ryul" },
+      { question: "백분___로 나타내세요.", choices: ["율", "률"], answer: "율", explanation: "'분'은 ㄴ 받침으로 끝나므로 '백분율'이 맞습니다.", wrongExplanation: "'백분률'은 ㄴ 받침 뒤의 표기가 틀렸습니다. 모음과 ㄴ 뒤는 '율'입니다.", reviewHref: "/guide/common-mistakes#yul-ryul" },
+      { question: "경쟁___이 매우 높다.", choices: ["율", "률"], answer: "률", explanation: "'경쟁'은 받침 ㅇ으로 끝나므로 '경쟁률'입니다.", wrongExplanation: "'경쟁율'은 ㅇ 받침 뒤에서 '율'을 잘못 쓴 것입니다. '경쟁률'로 씁니다.", reviewHref: "/guide/common-mistakes#yul-ryul" }
     ]
   },
   {
@@ -89,11 +89,11 @@ export const additionalQuizzes: Quiz[] = [
       "에요/예요는 자기소개나 안내 문장에서 많이 헷갈립니다. 명사 뒤에서 받침이 있으면 '이에요'를 씁니다. '학생이에요', '책이에요'가 맞습니다. 받침이 없으면 '예요'를 씁니다. '의사예요', '사과예요'처럼 적습니다. '아니에요'는 예외적으로 '아니예요'가 아니라 '아니에요'입니다. 받침 유무와 예외 표현을 함께 기억하면 대부분 해결됩니다.",
     examples: ["저는 학생이에요.", "그분은 의사예요.", "이건 책이에요.", "저건 사과예요.", "그건 아니에요."],
     questions: [
-      { question: "저는 학생__.", choices: ["이에요", "예요"], answer: "이에요", explanation: "'학생'은 받침이 있으므로 '이에요'가 맞습니다." },
-      { question: "그 사람은 의사__.", choices: ["이에요", "예요"], answer: "예요", explanation: "'의사'는 받침이 없으므로 '예요'를 씁니다." },
-      { question: "이건 제 책__.", choices: ["이에요", "예요"], answer: "이에요", explanation: "'책'은 받침이 있으므로 '책이에요'가 맞습니다." },
-      { question: "그건 사실이 아니__.", choices: ["에요", "예요"], answer: "에요", explanation: "'아니에요'가 표준 표기입니다." },
-      { question: "오늘 간식은 사과__.", choices: ["이에요", "예요"], answer: "예요", explanation: "'사과'는 받침이 없으므로 '사과예요'입니다." }
+      { question: "저는 학생__.", choices: ["이에요", "예요"], answer: "이에요", explanation: "'학생'은 받침이 있으므로 '이에요'가 맞습니다.", wrongExplanation: "받침 있는 '학생' 뒤의 '이에요'는 '예요'로 줄이지 않습니다.", reviewHref: "/guide/common-mistakes#eyo-yeyo" },
+      { question: "그 사람은 의사__. ('이에요'를 줄여 쓰세요.)", choices: ["이에요", "예요"], answer: "예요", explanation: "'의사이에요'를 줄이면 '의사예요'입니다. 줄여 쓰라는 조건에 따라 '예요'를 고릅니다.", wrongExplanation: "'의사이에요'도 줄이지 않은 형태로 쓸 수 있습니다. 이 문제는 줄인 형태를 요구하므로 '예요'를 고릅니다.", reviewHref: "/guide/common-mistakes#eyo-yeyo" },
+      { question: "이건 제 책__.", choices: ["이에요", "예요"], answer: "이에요", explanation: "'책'은 받침이 있으므로 '책이에요'가 맞습니다.", wrongExplanation: "받침 있는 '책' 뒤에서는 '책예요'로 줄이지 않습니다. '책이에요'입니다.", reviewHref: "/guide/common-mistakes#eyo-yeyo" },
+      { question: "그건 사실이 아니__.", choices: ["에요", "예요"], answer: "에요", explanation: "'아니에요'가 표준 표기입니다.", wrongExplanation: "'아니예요'는 '아니다' 뒤의 어미를 '이에요'의 준말로 잘못 본 표기입니다. '아니에요'를 줄이면 '아녜요'입니다.", reviewHref: "/guide/common-mistakes#eyo-yeyo" },
+      { question: "오늘 간식은 사과__. ('이에요'를 줄여 쓰세요.)", choices: ["이에요", "예요"], answer: "예요", explanation: "'사과이에요'를 줄이면 '사과예요'입니다. 이 문항은 줄인 표기를 묻습니다.", wrongExplanation: "'사과이에요'도 줄이지 않은 형태로 가능합니다. 이 문제는 줄여 쓰라는 조건이 있으므로 '예요'입니다.", reviewHref: "/guide/common-mistakes#eyo-yeyo" }
     ]
   },
   {
@@ -108,11 +108,11 @@ export const additionalQuizzes: Quiz[] = [
       "뵈요/봬요는 직장 메일과 메시지에서 자주 틀리는 표현입니다. 기본형은 '뵈다'이고, 높임 표현 '뵈어요'가 줄면 '봬요'가 됩니다. 그래서 '내일 봬요', '곧 찾아봬요'가 맞습니다. '뵈요'는 많이 쓰이지만 표준 표기가 아닙니다. 헷갈릴 때는 '뵈어요'로 풀어도 자연스러운지 확인하면 됩니다.",
     examples: ["내일 봬요.", "다음 주에 찾아봬요.", "처음 뵙겠습니다.", "곧 다시 뵈어요.", "회의 때 봬도 될까요?"],
     questions: [
-      { question: "내일 사무실에서 ___.", choices: ["뵈요", "봬요"], answer: "봬요", explanation: "'뵈어요'의 줄임말은 '봬요'입니다." },
-      { question: "다음 주에 다시 찾아___.", choices: ["뵈요", "봬요"], answer: "봬요", explanation: "'찾아뵈어요'가 줄어 '찾아봬요'가 됩니다." },
-      { question: "처음 ___겠습니다.", choices: ["뵙", "봽"], answer: "뵙", explanation: "격식 있는 인사말은 '처음 뵙겠습니다'가 맞습니다." },
-      { question: "잠깐 ___도 괜찮을까요?", choices: ["봬", "뵈"], answer: "봬", explanation: "'뵈어도'가 줄면 '봬도'가 됩니다." },
-      { question: "시간 괜찮으시면 오늘 ___요.", choices: ["뵈어", "봬"], answer: "봬", explanation: "'봬요' 자체가 '뵈어요'의 준말입니다." }
+      { question: "내일 사무실에서 ___.", choices: ["뵈요", "봬요"], answer: "봬요", explanation: "'뵈어요'의 줄임말은 '봬요'입니다.", wrongExplanation: "'뵈요'는 어간에 '요'만 붙여 어미 '-어'를 빠뜨렸습니다. '뵈어요' 또는 '봬요'입니다.", reviewHref: "/guide/common-mistakes#boeyo-bwaeyo" },
+      { question: "다음 주에 다시 찾아___.", choices: ["뵈요", "봬요"], answer: "봬요", explanation: "'찾아뵈어요'가 줄어 '찾아봬요'가 됩니다.", wrongExplanation: "'찾아뵈요'에는 '-어'가 빠졌습니다. '찾아뵈어요'를 줄이면 '찾아봬요'입니다.", reviewHref: "/guide/common-mistakes#boeyo-bwaeyo" },
+      { question: "처음 ___겠습니다.", choices: ["뵙", "봽"], answer: "뵙", explanation: "격식 있는 인사말은 '처음 뵙겠습니다'가 맞습니다.", wrongExplanation: "'봽'은 '뵙다'의 어간이 아닙니다. 격식 표현에는 '뵙겠습니다'를 씁니다.", reviewHref: "/guide/common-mistakes#boeyo-bwaeyo" },
+      { question: "잠깐 ___도 괜찮을까요?", choices: ["봬", "뵈"], answer: "봬", explanation: "'뵈어도'가 줄면 '봬도'가 됩니다.", wrongExplanation: "'뵈도'는 연결 어미 '-어도'의 '-어'를 빠뜨린 표기입니다. '뵈어도' 또는 '봬도'로 씁니다.", reviewHref: "/guide/common-mistakes#boeyo-bwaeyo" },
+      { question: "시간 괜찮으시면 오늘 ___요. ('뵈어'를 줄여 쓰세요.)", choices: ["뵈어", "봬"], answer: "봬", explanation: "'봬요' 자체가 '뵈어요'의 준말입니다.", wrongExplanation: "'뵈어요'도 줄이지 않은 올바른 형태입니다. 이 문제는 '뵈어'를 줄이라는 조건에 따라 '봬'를 고릅니다.", reviewHref: "/guide/common-mistakes#boeyo-bwaeyo" }
     ]
   },
   {
@@ -127,11 +127,11 @@ export const additionalQuizzes: Quiz[] = [
       "있다가/이따가는 발음이 비슷하지만 뜻이 다릅니다. '있다가'는 '있다'에 '-다가'가 붙은 말로, 어떤 장소나 상태에 머문 뒤 다음 행동을 한다는 뜻입니다. '집에 있다가 나갔다'처럼 씁니다. '이따가'는 지금보다 조금 지난 뒤를 뜻하는 시간 부사입니다. '이따가 전화할게'가 자연스럽습니다. 머무르는 행동인지, 잠시 후의 시간인지 구분하면 됩니다.",
     examples: ["집에 있다가 나왔다.", "이따가 전화할게.", "잠깐 앉아 있다가 가자.", "이따가 다시 보자.", "회사에 있다가 퇴근했다."],
     questions: [
-      { question: "집에 ___ 친구를 만나러 갔다.", choices: ["있다가", "이따가"], answer: "있다가", explanation: "집에 머문 뒤 이동한 것이므로 '있다가'입니다." },
-      { question: "___ 다시 전화할게.", choices: ["있다가", "이따가"], answer: "이따가", explanation: "잠시 후라는 시간 표현은 '이따가'입니다." },
-      { question: "카페에 조금 ___ 나가자.", choices: ["있다가", "이따가"], answer: "있다가", explanation: "카페에 머문다는 뜻이므로 '있다가'를 씁니다." },
-      { question: "밥은 ___ 먹자.", choices: ["있다가", "이따가"], answer: "이따가", explanation: "나중에 먹자는 뜻이므로 '이따가'가 맞습니다." },
-      { question: "회사에 ___ 바로 병원에 갔다.", choices: ["있다가", "이따가"], answer: "있다가", explanation: "회사에 머문 뒤 갔다는 뜻입니다." }
+      { question: "집에 ___ 친구를 만나러 갔다.", choices: ["있다가", "이따가"], answer: "있다가", explanation: "집에 머문 뒤 이동한 것이므로 '있다가'입니다.", wrongExplanation: "'이따가'는 잠시 후의 시간입니다. 집에 머문 뒤 나간 과거 행동에는 '있다가'를 씁니다.", reviewHref: "/guide/common-mistakes#itdaga-ittaga" },
+      { question: "___ 다시 전화할게. (잠시 후라는 뜻의 부사를 고르세요.)", choices: ["있다가", "이따가"], answer: "이따가", explanation: "잠시 후라는 시간 표현은 '이따가'입니다.", wrongExplanation: "'있다가'는 머무른 뒤의 행동을 연결합니다. 여기서는 잠시 후를 뜻하는 부사라는 조건에 맞지 않습니다.", reviewHref: "/guide/common-mistakes#itdaga-ittaga" },
+      { question: "카페에 조금 ___ 나가자.", choices: ["있다가", "이따가"], answer: "있다가", explanation: "카페에 머문다는 뜻이므로 '있다가'를 씁니다.", wrongExplanation: "'이따가'는 머무르는 동작을 나타내지 않습니다. 카페에 조금 머문 다음 나가자는 뜻에는 '있다가'입니다.", reviewHref: "/guide/common-mistakes#itdaga-ittaga" },
+      { question: "밥은 ___ 먹자. (잠시 후라는 뜻의 부사를 고르세요.)", choices: ["있다가", "이따가"], answer: "이따가", explanation: "나중에 먹자는 뜻이므로 '이따가'가 맞습니다.", wrongExplanation: "장소에 머무는 동작이 아니라 잠시 후의 시간을 가리키는 조건이므로 '있다가'와 다릅니다.", reviewHref: "/guide/common-mistakes#itdaga-ittaga" },
+      { question: "회사에 ___ 바로 병원에 갔다.", choices: ["있다가", "이따가"], answer: "있다가", explanation: "회사에 머문 뒤 갔다는 뜻입니다.", wrongExplanation: "'이따가'는 미래의 잠시 후를 가리킵니다. 회사에 머문 뒤 병원에 간 과거 행동은 '있다가'입니다.", reviewHref: "/guide/common-mistakes#itdaga-ittaga" }
     ]
   },
   {
@@ -146,11 +146,11 @@ export const additionalQuizzes: Quiz[] = [
       "잊다/잃다는 받침 때문에 헷갈리지만 뜻이 다릅니다. '잊다'는 기억하지 못하거나 마음에서 지우는 뜻입니다. '약속을 잊다', '이름을 잊어버리다'가 맞습니다. '잃다'는 가지고 있던 물건, 기회, 방향, 신뢰 등을 없어지게 되거나 놓치는 뜻입니다. '지갑을 잃다', '길을 잃다', '신뢰를 잃다'처럼 씁니다. 기억 문제인지 소유와 방향의 상실인지가 기준입니다.",
     examples: ["약속을 잊었다.", "지갑을 잃었다.", "길을 잃었다.", "이름을 잊어버렸다.", "신뢰를 잃지 말자."],
     questions: [
-      { question: "친구와의 약속을 깜빡 ___.", choices: ["잊었다", "잃었다"], answer: "잊었다", explanation: "기억하지 못한 것이므로 '잊었다'가 맞습니다." },
-      { question: "버스에서 지갑을 ___.", choices: ["잊었다", "잃었다"], answer: "잃었다", explanation: "물건을 잃어버린 상황은 '잃다'입니다." },
-      { question: "낯선 골목에서 길을 ___.", choices: ["잊었다", "잃었다"], answer: "잃었다", explanation: "방향을 놓친 것은 '길을 잃다'입니다." },
-      { question: "그 사람 이름을 ___.", choices: ["잊었다", "잃었다"], answer: "잊었다", explanation: "이름을 기억하지 못하므로 '잊다'를 씁니다." },
-      { question: "한 번 ___ 신뢰는 회복하기 어렵다.", choices: ["잊은", "잃은"], answer: "잃은", explanation: "신뢰가 없어졌다는 뜻이므로 '잃은'이 맞습니다." }
+      { question: "친구와의 약속을 깜빡 ___.", choices: ["잊었다", "잃었다"], answer: "잊었다", explanation: "기억하지 못한 것이므로 '잊었다'가 맞습니다.", wrongExplanation: "'잃었다'는 소유·기회·방향 등이 사라진 뜻입니다. 약속을 기억하지 못한 것은 '잊었다'입니다.", reviewHref: "/guide/common-mistakes#itda-ilda" },
+      { question: "버스에서 지갑이 없어져 찾지 못했다. 지갑을 ___.", choices: ["잊었다", "잃었다"], answer: "잃었다", explanation: "물건을 잃어버린 상황은 '잃다'입니다.", wrongExplanation: "'잊었다'는 기억하지 못한 뜻입니다. 지갑 자체가 없어져 찾지 못한 것은 '잃었다'입니다.", reviewHref: "/guide/common-mistakes#itda-ilda" },
+      { question: "낯선 골목에서 방향을 몰라 헤맸다. 길을 ___.", choices: ["잊었다", "잃었다"], answer: "잃었다", explanation: "방향을 놓친 것은 '길을 잃다'입니다.", wrongExplanation: "아는 경로가 기억나지 않으면 '길을 잊다'도 가능합니다. 이 문항은 낯선 골목에서 방향을 못 찾은 상황입니다.", reviewHref: "/guide/common-mistakes#itda-ilda" },
+      { question: "그 사람 이름이 기억나지 않는다. 이름을 ___.", choices: ["잊었다", "잃었다"], answer: "잊었다", explanation: "이름을 기억하지 못하므로 '잊다'를 씁니다.", wrongExplanation: "이름을 '잃었다'는 소유나 지위의 상실이 될 수 있습니다. 기억나지 않는다는 단서에는 '잊었다'입니다.", reviewHref: "/guide/common-mistakes#itda-ilda" },
+      { question: "한 번 ___ 신뢰는 회복하기 어렵다.", choices: ["잊은", "잃은"], answer: "잃은", explanation: "신뢰가 없어졌다는 뜻이므로 '잃은'이 맞습니다.", wrongExplanation: "잊은 것은 기억에서 지운 뜻입니다. 신뢰를 유지하지 못한 상황에는 '잃은'입니다.", reviewHref: "/guide/common-mistakes#itda-ilda" }
     ]
   },
   {
@@ -165,11 +165,11 @@ export const additionalQuizzes: Quiz[] = [
       "부치다/붙이다는 뜻이 여러 갈래라 자주 헷갈립니다. '붙이다'는 두 물체가 떨어지지 않게 하거나 이름·조건 등을 덧붙이는 뜻입니다. '스티커를 붙이다', '별명을 붙이다'가 맞습니다. '부치다'는 편지나 소포를 보내다, 전을 지지다, 힘이 모자라다 같은 뜻으로 쓰입니다. '편지를 부치다', '전을 부치다', '힘에 부치다'처럼 씁니다.",
     examples: ["우표를 붙이다.", "편지를 부치다.", "전을 부치다.", "포스터를 벽에 붙이다.", "일이 힘에 부친다."],
     questions: [
-      { question: "봉투에 우표를 ___.", choices: ["부쳤다", "붙였다"], answer: "붙였다", explanation: "우표를 달라붙게 하는 것이므로 '붙였다'입니다." },
-      { question: "친구에게 편지를 ___.", choices: ["부쳤다", "붙였다"], answer: "부쳤다", explanation: "우편으로 보내는 것은 '부치다'입니다." },
-      { question: "명절에 동그랑땡을 ___.", choices: ["부쳤다", "붙였다"], answer: "부쳤다", explanation: "전을 지지는 것은 '부치다'를 씁니다." },
-      { question: "벽에 안내문을 ___.", choices: ["부쳤다", "붙였다"], answer: "붙였다", explanation: "벽에 달라붙게 하는 상황은 '붙이다'입니다." },
-      { question: "혼자 하기엔 일이 힘에 ___.", choices: ["부친다", "붙인다"], answer: "부친다", explanation: "감당하기 어렵다는 뜻은 '힘에 부치다'입니다." }
+      { question: "봉투에 우표를 ___.", choices: ["부쳤다", "붙였다"], answer: "붙였다", explanation: "우표를 달라붙게 하는 것이므로 '붙였다'입니다.", wrongExplanation: "'부쳤다'는 우편으로 보내거나 전을 익히는 등의 뜻입니다. 우표를 접착한 것은 '붙였다'입니다.", reviewHref: "/guide/common-mistakes#buchida-butchida" },
+      { question: "친구에게 편지를 ___.", choices: ["부쳤다", "붙였다"], answer: "부쳤다", explanation: "우편으로 보내는 것은 '부치다'입니다.", wrongExplanation: "'붙였다'는 접착하거나 덧붙인 뜻입니다. 편지를 우편으로 보낸 것은 '부쳤다'입니다.", reviewHref: "/guide/common-mistakes#buchida-butchida" },
+      { question: "명절에 동그랑땡을 ___.", choices: ["부쳤다", "붙였다"], answer: "부쳤다", explanation: "전을 지지는 것은 '부치다'를 씁니다.", wrongExplanation: "동그랑땡을 달라붙게 한 것이 아니라 기름에 익힌 상황이므로 '붙였다'와 다릅니다.", reviewHref: "/guide/common-mistakes#buchida-butchida" },
+      { question: "벽에 안내문을 ___.", choices: ["부쳤다", "붙였다"], answer: "붙였다", explanation: "벽에 달라붙게 하는 상황은 '붙이다'입니다.", wrongExplanation: "안내문을 보낸 것이 아니라 벽에 접착했습니다. 이때는 '부쳤다'가 아닙니다.", reviewHref: "/guide/common-mistakes#buchida-butchida" },
+      { question: "혼자 하기엔 일이 힘에 ___.", choices: ["부친다", "붙인다"], answer: "부친다", explanation: "감당하기 어렵다는 뜻은 '힘에 부치다'입니다.", wrongExplanation: "'붙인다'는 접착·추가 등의 뜻입니다. 능력으로 감당하기 어렵다는 말은 '힘에 부친다'입니다.", reviewHref: "/guide/common-mistakes#buchida-butchida" }
     ]
   },
   {
@@ -184,11 +184,11 @@ export const additionalQuizzes: Quiz[] = [
       "같이/가치는 발음이 비슷하지만 품사와 뜻이 다릅니다. '같이'는 함께한다는 뜻이나 어떤 모양과 같다는 뜻으로 쓰입니다. '같이 가자', '눈같이 하얗다'가 맞습니다. '가치'는 어떤 대상의 쓸모, 중요성, 값어치를 뜻합니다. '삶의 가치', '투자 가치'처럼 씁니다. 사람과 함께 움직이는지, 중요성과 값어치를 말하는지 확인하면 됩니다.",
     examples: ["나랑 같이 가자.", "그 일은 가치가 있다.", "친구와 같이 공부했다.", "시간의 가치를 알다.", "눈같이 하얗다."],
     questions: [
-      { question: "우리 내일 ___ 갈래?", choices: ["같이", "가치"], answer: "같이", explanation: "함께 가자는 뜻이므로 '같이'가 맞습니다." },
-      { question: "이 자료는 보존 ___가 높다.", choices: ["같이", "가치"], answer: "가치", explanation: "중요성이나 값어치를 뜻하므로 '가치'입니다." },
-      { question: "동생과 ___ 숙제를 했다.", choices: ["같이", "가치"], answer: "같이", explanation: "함께했다는 뜻입니다." },
-      { question: "돈보다 중요한 ___도 있다.", choices: ["같이", "가치"], answer: "가치", explanation: "중요한 의미나 값어치를 말합니다." },
-      { question: "그는 바람___ 빠르게 달렸다.", choices: ["같이", "가치"], answer: "같이", explanation: "무엇과 같다는 뜻으로 '같이'를 씁니다." }
+      { question: "우리 내일 ___ 갈래?", choices: ["같이", "가치"], answer: "같이", explanation: "함께 가자는 뜻이므로 '같이'가 맞습니다.", wrongExplanation: "'가치'는 값어치를 나타내는 명사입니다. 함께 가자는 뜻은 부사 '같이'입니다.", reviewHref: "/guide/common-mistakes#gachi-gati" },
+      { question: "이 자료는 보존 ___가 높다.", choices: ["같이", "가치"], answer: "가치", explanation: "중요성이나 값어치를 뜻하므로 '가치'입니다.", wrongExplanation: "'같이'는 함께 또는 비슷하게의 뜻입니다. 보존할 만한 중요성은 명사 '가치'입니다.", reviewHref: "/guide/common-mistakes#gachi-gati" },
+      { question: "동생과 ___ 숙제를 했다.", choices: ["같이", "가치"], answer: "같이", explanation: "함께했다는 뜻입니다.", wrongExplanation: "'가치 숙제'는 함께했다는 뜻이 아닙니다. 동생과 공동으로 했으므로 '같이'입니다.", reviewHref: "/guide/common-mistakes#gachi-gati" },
+      { question: "돈보다 중요한 ___도 있다.", choices: ["같이", "가치"], answer: "가치", explanation: "중요한 의미나 값어치를 말합니다.", wrongExplanation: "중요한 의미를 가리키는 명사가 필요합니다. 함께의 뜻인 '같이'는 이 자리에 맞지 않습니다.", reviewHref: "/guide/common-mistakes#gachi-gati" },
+      { question: "그는 바람___ 빠르게 달렸다.", choices: ["같이", "가치"], answer: "같이", explanation: "무엇과 같다는 뜻으로 '같이'를 씁니다.", wrongExplanation: "'바람가치'는 비교의 뜻이 되지 않습니다. 조사 '같이'를 붙여 '바람같이'로 씁니다.", reviewHref: "/guide/common-mistakes#gachi-gati" }
     ]
   },
   {
@@ -203,11 +203,11 @@ export const additionalQuizzes: Quiz[] = [
       "하므로/함으로는 보고서와 안내문에서 자주 헷갈립니다. '하므로'는 앞 내용이 뒤 내용의 이유나 원인임을 나타냅니다. '위험하므로 접근하지 마세요'처럼 씁니다. '함으로'는 어떤 행동을 수단이나 방법으로 삼는다는 뜻입니다. 보통 '함으로써' 형태로 더 분명하게 씁니다. '연습함으로써 실력이 늘었다'가 자연스럽습니다. 이유인지 수단인지 구분하는 것이 핵심입니다.",
     examples: ["비가 오므로 우산을 챙기세요.", "연습함으로써 실력이 늘었다.", "위험하므로 출입 금지입니다.", "대화함으로써 오해를 풀었다.", "필요하므로 준비했다."],
     questions: [
-      { question: "도로가 미끄러우___ 천천히 운전하세요.", choices: ["므로", "ㅁ으로"], answer: "므로", explanation: "미끄러운 것이 이유이므로 '미끄러우므로'가 맞습니다." },
-      { question: "꾸준히 연습___ 실력이 늘었다.", choices: ["하므로", "함으로써"], answer: "함으로써", explanation: "연습을 수단으로 삼은 결과이므로 '함으로써'가 자연스럽습니다." },
-      { question: "자료가 부족___ 결론을 내리기 어렵다.", choices: ["하므로", "함으로"], answer: "하므로", explanation: "부족하다는 이유를 나타내므로 '하므로'입니다." },
-      { question: "서로 대화___ 문제를 해결했다.", choices: ["하므로", "함으로써"], answer: "함으로써", explanation: "대화를 방법으로 삼았으므로 '함으로써'를 씁니다." },
-      { question: "중요___ 다시 확인했다.", choices: ["하므로", "함으로"], answer: "하므로", explanation: "중요하다는 이유이므로 '중요하므로'가 맞습니다." }
+      { question: "도로가 미끄럽다고 합니다. 위험___ 천천히 운전하세요.", choices: ["하므로", "하므로써"], answer: "하므로", explanation: "위험하다는 이유를 어미 '-므로'로 연결하면 '위험하므로'입니다. 어미 뒤에 '써'를 더한 '하므로써'는 잘못된 표기입니다.", wrongExplanation: "'하므로써'는 어미 '-므로'에 '써'를 잘못 붙인 표기입니다. '함으로써'는 명사형과 조사의 결합이라 구조가 다릅니다.", reviewHref: "/guide/common-mistakes#hameuro-hamuro" },
+      { question: "꾸준히 연습___ 실력을 기르는 방법을 택했다.", choices: ["하므로", "함으로써"], answer: "함으로써", explanation: "연습을 수단으로 삼은 결과이므로 '함으로써'가 자연스럽습니다.", wrongExplanation: "'하므로'는 연습이 이유라는 뜻도 될 수 있습니다. 이 문항은 실력을 기르는 수단을 고르라고 했으므로 '함으로써'입니다.", reviewHref: "/guide/common-mistakes#hameuro-hamuro" },
+      { question: "자료가 부족___ 결론을 내리기 어렵다.", choices: ["하므로", "하므로써"], answer: "하므로", explanation: "부족하다는 이유를 나타내므로 '하므로'입니다.", wrongExplanation: "'하므로써'로 어미에 '써'를 붙이지 않습니다. '부족하므로'처럼 이유를 이어 줍니다.", reviewHref: "/guide/common-mistakes#hameuro-hamuro" },
+      { question: "서로 대화___ 문제를 해결하는 방법을 택했다.", choices: ["하므로", "함으로써"], answer: "함으로써", explanation: "대화를 방법으로 삼았으므로 '함으로써'를 씁니다.", wrongExplanation: "대화가 이유라는 '하므로'와 달리 여기서는 해결 방법을 명시했습니다. 수단의 뜻인 '함으로써'입니다.", reviewHref: "/guide/common-mistakes#hameuro-hamuro" },
+      { question: "중요___ 다시 확인했다.", choices: ["하므로", "하므로써"], answer: "하므로", explanation: "중요하다는 이유이므로 '중요하므로'가 맞습니다.", wrongExplanation: "이유의 어미 '-므로'에는 '써'를 붙이지 않습니다. '중요하므로'입니다.", reviewHref: "/guide/common-mistakes#hameuro-hamuro" }
     ]
   },
   {
@@ -222,11 +222,11 @@ export const additionalQuizzes: Quiz[] = [
       "오랜만/오랫만은 인사말에서 자주 틀리는 표현입니다. 표준 표기는 '오랜만'입니다. 이는 '오래간만'이 줄어든 말이므로 사이시옷을 넣어 '오랫만'으로 쓰지 않습니다. '정말 오랜만이야', '오랜만에 만났다', '오랜만입니다'가 모두 맞습니다. 자주 쓰는 말일수록 틀린 표기가 익숙해질 수 있으니 통째로 기억하는 것이 좋습니다.",
     examples: ["정말 오랜만이야.", "오랜만에 영화를 봤다.", "오랜만입니다.", "오랜만에 연락했다.", "이렇게 보니 오랜만이다."],
     questions: [
-      { question: "정말 ___이야.", choices: ["오랜만", "오랫만"], answer: "오랜만", explanation: "'오랜만'이 표준 표기입니다." },
-      { question: "___에 친구를 만났다.", choices: ["오랜만", "오랫만"], answer: "오랜만", explanation: "'오랜만에'로 씁니다." },
-      { question: "선생님, ___.", choices: ["오랜만입니다", "오랫만입니다"], answer: "오랜만입니다", explanation: "격식 있는 인사도 '오랜만입니다'가 맞습니다." },
-      { question: "___ 보는 얼굴이라 반가웠다.", choices: ["오랜만에", "오랫만에"], answer: "오랜만에", explanation: "사이시옷을 넣지 않습니다." },
-      { question: "이 노래를 들으니 ___ 생각난다.", choices: ["오랜만에", "오랫만에"], answer: "오랜만에", explanation: "'오래간만'의 준말은 '오랜만'입니다." }
+      { question: "정말 ___이야.", choices: ["오랜만", "오랫만"], answer: "오랜만", explanation: "'오랜만'이 표준 표기입니다.", wrongExplanation: "'오랫만'은 준말에 사이시옷을 잘못 넣은 표기입니다. '오랫동안'은 별도의 합성어라 표기가 다릅니다.", reviewHref: "/guide/common-mistakes#oraenman-oraetman" },
+      { question: "___에 친구를 만났다.", choices: ["오랜만", "오랫만"], answer: "오랜만", explanation: "'오랜만에'로 씁니다.", wrongExplanation: "'오랫만'은 준말에 사이시옷을 잘못 넣은 표기입니다. '오랫동안'은 별도의 합성어라 표기가 다릅니다.", reviewHref: "/guide/common-mistakes#oraenman-oraetman" },
+      { question: "선생님, ___.", choices: ["오랜만입니다", "오랫만입니다"], answer: "오랜만입니다", explanation: "격식 있는 인사도 '오랜만입니다'가 맞습니다.", wrongExplanation: "'오랫만'은 준말에 사이시옷을 잘못 넣은 표기입니다. '오랫동안'은 별도의 합성어라 표기가 다릅니다.", reviewHref: "/guide/common-mistakes#oraenman-oraetman" },
+      { question: "___ 보는 얼굴이라 반가웠다.", choices: ["오랜만에", "오랫만에"], answer: "오랜만에", explanation: "사이시옷을 넣지 않습니다.", wrongExplanation: "'오랫만'은 준말에 사이시옷을 잘못 넣은 표기입니다. '오랫동안'은 별도의 합성어라 표기가 다릅니다.", reviewHref: "/guide/common-mistakes#oraenman-oraetman" },
+      { question: "이 노래를 들으니 ___ 생각난다.", choices: ["오랜만에", "오랫만에"], answer: "오랜만에", explanation: "'오래간만'의 준말은 '오랜만'입니다.", wrongExplanation: "'오랫만'은 준말에 사이시옷을 잘못 넣은 표기입니다. '오랫동안'은 별도의 합성어라 표기가 다릅니다.", reviewHref: "/guide/common-mistakes#oraenman-oraetman" }
     ]
   },
   {
@@ -241,11 +241,11 @@ export const additionalQuizzes: Quiz[] = [
       "금세/금새는 일상 글에서 많이 헷갈리는 표현입니다. '금세'는 '금시에'가 줄어든 말로, 매우 짧은 시간 안에라는 뜻입니다. '금세 끝났다', '금세 잊어버렸다'처럼 씁니다. '금새'는 물건의 값이라는 뜻이지만 현대 일상에서는 자주 쓰이지 않습니다. 대부분의 문장에서 시간의 빠름을 말한다면 '금세'가 맞습니다.",
     examples: ["눈이 금세 녹았다.", "금세 끝날 거야.", "아이가 금세 잠들었다.", "소문이 금세 퍼졌다.", "금세 잊어버렸다."],
     questions: [
-      { question: "눈이 ___ 녹았다.", choices: ["금세", "금새"], answer: "금세", explanation: "짧은 시간 안에라는 뜻은 '금세'입니다." },
-      { question: "일이 ___ 끝났다.", choices: ["금세", "금새"], answer: "금세", explanation: "시간이 빨리 지났다는 뜻입니다." },
-      { question: "아이는 ___ 잠이 들었다.", choices: ["금세", "금새"], answer: "금세", explanation: "'금시에'가 줄어든 말은 '금세'입니다." },
-      { question: "소식이 ___ 퍼졌다.", choices: ["금세", "금새"], answer: "금세", explanation: "빠르게 퍼졌다는 의미이므로 '금세'입니다." },
-      { question: "방금 들었는데 ___ 잊었다.", choices: ["금세", "금새"], answer: "금세", explanation: "얼마 지나지 않아 잊었다는 뜻입니다." }
+      { question: "눈이 ___ 녹았다.", choices: ["금세", "금새"], answer: "금세", explanation: "짧은 시간 안에라는 뜻은 '금세'입니다.", wrongExplanation: "이 문맥은 물건값이 아닌 시간의 빠름입니다. '금시에'를 줄인 '금세'로 적습니다.", reviewHref: "/guide/common-mistakes#geumse-geumsae" },
+      { question: "일이 ___ 끝났다.", choices: ["금세", "금새"], answer: "금세", explanation: "시간이 빨리 지났다는 뜻입니다.", wrongExplanation: "이 문맥은 물건값이 아닌 시간의 빠름입니다. '금시에'를 줄인 '금세'로 적습니다.", reviewHref: "/guide/common-mistakes#geumse-geumsae" },
+      { question: "아이는 ___ 잠이 들었다.", choices: ["금세", "금새"], answer: "금세", explanation: "'금시에'가 줄어든 말은 '금세'입니다.", wrongExplanation: "이 문맥은 물건값이 아닌 시간의 빠름입니다. '금시에'를 줄인 '금세'로 적습니다.", reviewHref: "/guide/common-mistakes#geumse-geumsae" },
+      { question: "소식이 ___ 퍼졌다.", choices: ["금세", "금새"], answer: "금세", explanation: "빠르게 퍼졌다는 의미이므로 '금세'입니다.", wrongExplanation: "이 문맥은 물건값이 아닌 시간의 빠름입니다. '금시에'를 줄인 '금세'로 적습니다.", reviewHref: "/guide/common-mistakes#geumse-geumsae" },
+      { question: "방금 들었는데 ___ 잊었다.", choices: ["금세", "금새"], answer: "금세", explanation: "얼마 지나지 않아 잊었다는 뜻입니다.", wrongExplanation: "이 문맥은 물건값이 아닌 시간의 빠름입니다. '금시에'를 줄인 '금세'로 적습니다.", reviewHref: "/guide/common-mistakes#geumse-geumsae" }
     ]
   },
   {
@@ -260,11 +260,11 @@ export const additionalQuizzes: Quiz[] = [
       "깨끗이/깨끗히는 '-이'와 '-히'가 헷갈리는 대표 표현입니다. 표준 표기는 '깨끗이'입니다. '방을 깨끗이 치우다', '손을 깨끗이 씻다', '마음을 깨끗이 비우다'처럼 씁니다. '깨끗히'는 많이 보이지만 표준 표기가 아닙니다. 자주 쓰는 부사라 문장 전체의 인상을 좌우하므로 '깨끗이'를 통째로 기억하는 것이 좋습니다.",
     examples: ["방을 깨끗이 청소했다.", "손을 깨끗이 씻어라.", "깨끗이 정리했다.", "마음을 깨끗이 비웠다.", "그릇을 깨끗이 닦았다."],
     questions: [
-      { question: "방을 ___ 청소했다.", choices: ["깨끗이", "깨끗히"], answer: "깨끗이", explanation: "'깨끗이'가 표준 표기입니다." },
-      { question: "손을 ___ 씻으세요.", choices: ["깨끗이", "깨끗히"], answer: "깨끗이", explanation: "위생 문장에서도 '깨끗이'를 씁니다." },
-      { question: "책상을 ___ 정리했다.", choices: ["깨끗이", "깨끗히"], answer: "깨끗이", explanation: "'깨끗히'는 틀린 표기입니다." },
-      { question: "그릇을 ___ 닦았다.", choices: ["깨끗이", "깨끗히"], answer: "깨끗이", explanation: "표준 표기는 항상 '깨끗이'입니다." },
-      { question: "지난 일은 ___ 잊자.", choices: ["깨끗이", "깨끗히"], answer: "깨끗이", explanation: "비유적 표현에서도 '깨끗이'가 맞습니다." }
+      { question: "방을 ___ 청소했다.", choices: ["깨끗이", "깨끗히"], answer: "깨끗이", explanation: "'깨끗이'가 표준 표기입니다.", wrongExplanation: "'깨끗히'는 표준 부사 표기가 아닙니다. '깨끗하다'에 '하다'가 있다고 무조건 '-히'로 바꾸지 않습니다.", reviewHref: "/guide/common-mistakes#kkaekkeusi-kkaekkeushi" },
+      { question: "손을 ___ 씻으세요.", choices: ["깨끗이", "깨끗히"], answer: "깨끗이", explanation: "위생 문장에서도 '깨끗이'를 씁니다.", wrongExplanation: "'깨끗히'는 표준 부사 표기가 아닙니다. '깨끗하다'에 '하다'가 있다고 무조건 '-히'로 바꾸지 않습니다.", reviewHref: "/guide/common-mistakes#kkaekkeusi-kkaekkeushi" },
+      { question: "책상을 ___ 정리했다.", choices: ["깨끗이", "깨끗히"], answer: "깨끗이", explanation: "'깨끗히'는 틀린 표기입니다.", wrongExplanation: "'깨끗히'는 표준 부사 표기가 아닙니다. '깨끗하다'에 '하다'가 있다고 무조건 '-히'로 바꾸지 않습니다.", reviewHref: "/guide/common-mistakes#kkaekkeusi-kkaekkeushi" },
+      { question: "그릇을 ___ 닦았다.", choices: ["깨끗이", "깨끗히"], answer: "깨끗이", explanation: "표준 표기는 항상 '깨끗이'입니다.", wrongExplanation: "'깨끗히'는 표준 부사 표기가 아닙니다. '깨끗하다'에 '하다'가 있다고 무조건 '-히'로 바꾸지 않습니다.", reviewHref: "/guide/common-mistakes#kkaekkeusi-kkaekkeushi" },
+      { question: "지난 일은 ___ 잊자.", choices: ["깨끗이", "깨끗히"], answer: "깨끗이", explanation: "비유적 표현에서도 '깨끗이'가 맞습니다.", wrongExplanation: "'깨끗히'는 표준 부사 표기가 아닙니다. '깨끗하다'에 '하다'가 있다고 무조건 '-히'로 바꾸지 않습니다.", reviewHref: "/guide/common-mistakes#kkaekkeusi-kkaekkeushi" }
     ]
   },
   {
@@ -279,11 +279,11 @@ export const additionalQuizzes: Quiz[] = [
       "일일이/일일히는 업무 메일과 안내문에서 자주 틀리는 표현입니다. 표준 표기는 '일일이'입니다. '일일이 확인하다', '일일이 설명하다', '일일이 답장하다'처럼 하나하나 빠짐없이 한다는 뜻으로 씁니다. '-히'로 적고 싶어도 이 단어는 '일일이'가 맞습니다. 반복 확인이나 세부 설명을 말할 때 자주 쓰이므로 통째로 익혀 두면 좋습니다.",
     examples: ["파일을 일일이 확인했다.", "일일이 설명하기 어렵다.", "댓글에 일일이 답했다.", "이름을 일일이 불렀다.", "사정을 일일이 말할 수 없다."],
     questions: [
-      { question: "파일을 ___ 확인했다.", choices: ["일일이", "일일히"], answer: "일일이", explanation: "'일일이'가 표준 표기입니다." },
-      { question: "모든 이유를 ___ 설명하기 어렵다.", choices: ["일일이", "일일히"], answer: "일일이", explanation: "하나하나 설명한다는 뜻은 '일일이'입니다." },
-      { question: "댓글에 ___ 답장을 달았다.", choices: ["일일이", "일일히"], answer: "일일이", explanation: "'일일히'는 틀린 표기입니다." },
-      { question: "출석부의 이름을 ___ 불렀다.", choices: ["일일이", "일일히"], answer: "일일이", explanation: "하나씩 빠짐없이 부르는 상황입니다." },
-      { question: "그 일을 ___ 신경 쓰지 마.", choices: ["일일이", "일일히"], answer: "일일이", explanation: "세세하게 하나하나라는 뜻으로 '일일이'를 씁니다." }
+      { question: "파일을 ___ 확인했다.", choices: ["일일이", "일일히"], answer: "일일이", explanation: "'일일이'가 표준 표기입니다.", wrongExplanation: "'일일히'는 틀린 표기입니다. 겹친 명사 뒤의 '-이'인 '일일이'를 쓰며, '-하다'와 짝지어 만들지 않습니다.", reviewHref: "/guide/common-mistakes#iriri-irirhi" },
+      { question: "모든 이유를 ___ 설명하기 어렵다.", choices: ["일일이", "일일히"], answer: "일일이", explanation: "하나하나 설명한다는 뜻은 '일일이'입니다.", wrongExplanation: "'일일히'는 틀린 표기입니다. 겹친 명사 뒤의 '-이'인 '일일이'를 쓰며, '-하다'와 짝지어 만들지 않습니다.", reviewHref: "/guide/common-mistakes#iriri-irirhi" },
+      { question: "댓글에 ___ 답장을 달았다.", choices: ["일일이", "일일히"], answer: "일일이", explanation: "'일일히'는 틀린 표기입니다.", wrongExplanation: "'일일히'는 틀린 표기입니다. 겹친 명사 뒤의 '-이'인 '일일이'를 쓰며, '-하다'와 짝지어 만들지 않습니다.", reviewHref: "/guide/common-mistakes#iriri-irirhi" },
+      { question: "출석부의 이름을 ___ 불렀다.", choices: ["일일이", "일일히"], answer: "일일이", explanation: "하나씩 빠짐없이 부르는 상황입니다.", wrongExplanation: "'일일히'는 틀린 표기입니다. 겹친 명사 뒤의 '-이'인 '일일이'를 쓰며, '-하다'와 짝지어 만들지 않습니다.", reviewHref: "/guide/common-mistakes#iriri-irirhi" },
+      { question: "그 일을 ___ 신경 쓰지 마.", choices: ["일일이", "일일히"], answer: "일일이", explanation: "세세하게 하나하나라는 뜻으로 '일일이'를 씁니다.", wrongExplanation: "'일일히'는 틀린 표기입니다. 겹친 명사 뒤의 '-이'인 '일일이'를 쓰며, '-하다'와 짝지어 만들지 않습니다.", reviewHref: "/guide/common-mistakes#iriri-irirhi" }
     ]
   },
   {
@@ -298,11 +298,11 @@ export const additionalQuizzes: Quiz[] = [
       "곰곰이/곰곰히는 생각을 나타내는 문장에서 자주 헷갈립니다. 표준 표기는 '곰곰이'입니다. '곰곰이 생각하다', '곰곰이 따져 보다', '곰곰이 되짚다'처럼 씁니다. '곰곰히'는 발음상 자연스럽게 느껴질 수 있지만 표준 표기가 아닙니다. 글에서 신중함을 표현할 때 많이 쓰는 말이므로 정확한 표기를 기억해 두면 좋습니다.",
     examples: ["곰곰이 생각해 보았다.", "문제를 곰곰이 따졌다.", "곰곰이 되짚어 보자.", "이유를 곰곰이 살폈다.", "혼자 곰곰이 고민했다."],
     questions: [
-      { question: "그 문제를 ___ 생각했다.", choices: ["곰곰이", "곰곰히"], answer: "곰곰이", explanation: "'곰곰이'가 표준 표기입니다." },
-      { question: "이유를 ___ 따져 보자.", choices: ["곰곰이", "곰곰히"], answer: "곰곰이", explanation: "깊이 생각한다는 뜻은 '곰곰이'입니다." },
-      { question: "지난 일을 ___ 되짚었다.", choices: ["곰곰이", "곰곰히"], answer: "곰곰이", explanation: "'곰곰히'는 틀린 표기입니다." },
-      { question: "제안을 ___ 검토했다.", choices: ["곰곰이", "곰곰히"], answer: "곰곰이", explanation: "신중하게 살피는 상황입니다." },
-      { question: "혼자 ___ 고민해 봤다.", choices: ["곰곰이", "곰곰히"], answer: "곰곰이", explanation: "표준 표기는 '곰곰이'입니다." }
+      { question: "그 문제를 ___ 생각했다.", choices: ["곰곰이", "곰곰히"], answer: "곰곰이", explanation: "'곰곰이'가 표준 표기입니다.", wrongExplanation: "'곰곰히'는 표준 표기가 아닙니다. 부사 '곰곰'에 '-이'가 붙은 '곰곰이'입니다.", reviewHref: "/guide/common-mistakes#gomgomi-gomgomhi" },
+      { question: "이유를 ___ 따져 보자.", choices: ["곰곰이", "곰곰히"], answer: "곰곰이", explanation: "깊이 생각한다는 뜻은 '곰곰이'입니다.", wrongExplanation: "'곰곰히'는 표준 표기가 아닙니다. 부사 '곰곰'에 '-이'가 붙은 '곰곰이'입니다.", reviewHref: "/guide/common-mistakes#gomgomi-gomgomhi" },
+      { question: "지난 일을 ___ 되짚었다.", choices: ["곰곰이", "곰곰히"], answer: "곰곰이", explanation: "'곰곰히'는 틀린 표기입니다.", wrongExplanation: "'곰곰히'는 표준 표기가 아닙니다. 부사 '곰곰'에 '-이'가 붙은 '곰곰이'입니다.", reviewHref: "/guide/common-mistakes#gomgomi-gomgomhi" },
+      { question: "제안을 ___ 검토했다.", choices: ["곰곰이", "곰곰히"], answer: "곰곰이", explanation: "신중하게 살피는 상황입니다.", wrongExplanation: "'곰곰히'는 표준 표기가 아닙니다. 부사 '곰곰'에 '-이'가 붙은 '곰곰이'입니다.", reviewHref: "/guide/common-mistakes#gomgomi-gomgomhi" },
+      { question: "혼자 ___ 고민해 봤다.", choices: ["곰곰이", "곰곰히"], answer: "곰곰이", explanation: "표준 표기는 '곰곰이'입니다.", wrongExplanation: "'곰곰히'는 표준 표기가 아닙니다. 부사 '곰곰'에 '-이'가 붙은 '곰곰이'입니다.", reviewHref: "/guide/common-mistakes#gomgomi-gomgomhi" }
     ]
   },
   {
@@ -317,11 +317,11 @@ export const additionalQuizzes: Quiz[] = [
       "통째로/통채로는 음식이나 물건을 말할 때 자주 틀립니다. 표준 표기는 '통째로'입니다. '사과를 통째로 먹다', '파일을 통째로 삭제하다', '건물을 통째로 빌리다'처럼 전체를 나누지 않는다는 뜻입니다. '통채로'는 표준 표기가 아닙니다. '째'가 전체의 단위를 나타낸다고 기억하면 쉽습니다.",
     examples: ["사과를 통째로 먹었다.", "파일을 통째로 삭제했다.", "책을 통째로 외웠다.", "건물을 통째로 빌렸다.", "문장을 통째로 옮겼다."],
     questions: [
-      { question: "사과를 ___ 먹었다.", choices: ["통째로", "통채로"], answer: "통째로", explanation: "전체 그대로라는 뜻은 '통째로'입니다." },
-      { question: "폴더를 ___ 삭제했다.", choices: ["통째로", "통채로"], answer: "통째로", explanation: "'통채로'는 틀린 표기입니다." },
-      { question: "문장을 ___ 외웠다.", choices: ["통째로", "통채로"], answer: "통째로", explanation: "나누지 않고 전체를 외운 상황입니다." },
-      { question: "건물을 하루 ___ 빌렸다.", choices: ["통째로", "통채로"], answer: "통째로", explanation: "건물 전체를 빌렸다는 뜻입니다." },
-      { question: "자료를 ___ 복사했다.", choices: ["통째로", "통채로"], answer: "통째로", explanation: "전체를 그대로 복사했으므로 '통째로'가 맞습니다." }
+      { question: "사과를 ___ 먹었다.", choices: ["통째로", "통채로"], answer: "통째로", explanation: "전체 그대로라는 뜻은 '통째로'입니다.", wrongExplanation: "'통채로'는 잘못된 표기입니다. '옷을 입은 채로'의 의존 명사 '채'와 덩어리 전체의 '통째'는 다른 말입니다.", reviewHref: "/guide/common-mistakes#tongjjaero-tongchaero" },
+      { question: "폴더를 ___ 삭제했다.", choices: ["통째로", "통채로"], answer: "통째로", explanation: "'통채로'는 틀린 표기입니다.", wrongExplanation: "'통채로'는 잘못된 표기입니다. '옷을 입은 채로'의 의존 명사 '채'와 덩어리 전체의 '통째'는 다른 말입니다.", reviewHref: "/guide/common-mistakes#tongjjaero-tongchaero" },
+      { question: "문장을 ___ 외웠다.", choices: ["통째로", "통채로"], answer: "통째로", explanation: "나누지 않고 전체를 외운 상황입니다.", wrongExplanation: "'통채로'는 잘못된 표기입니다. '옷을 입은 채로'의 의존 명사 '채'와 덩어리 전체의 '통째'는 다른 말입니다.", reviewHref: "/guide/common-mistakes#tongjjaero-tongchaero" },
+      { question: "건물의 일부가 아닌 전체를 하루 동안 ___ 빌렸다.", choices: ["통째로", "통채로"], answer: "통째로", explanation: "건물 전체를 빌렸다는 뜻입니다.", wrongExplanation: "'통채로'는 잘못된 표기입니다. '옷을 입은 채로'의 의존 명사 '채'와 덩어리 전체의 '통째'는 다른 말입니다.", reviewHref: "/guide/common-mistakes#tongjjaero-tongchaero" },
+      { question: "자료를 ___ 복사했다.", choices: ["통째로", "통채로"], answer: "통째로", explanation: "전체를 그대로 복사했으므로 '통째로'가 맞습니다.", wrongExplanation: "'통채로'는 잘못된 표기입니다. '옷을 입은 채로'의 의존 명사 '채'와 덩어리 전체의 '통째'는 다른 말입니다.", reviewHref: "/guide/common-mistakes#tongjjaero-tongchaero" }
     ]
   },
   {
@@ -336,11 +336,11 @@ export const additionalQuizzes: Quiz[] = [
       "희한하다/희안하다는 발음 때문에 많이 헷갈립니다. 표준 표기는 '희한하다'입니다. 이상하거나 드물어서 눈에 띄는 일을 말할 때 씁니다. '참 희한한 일이다', '희한하게도 비가 그쳤다'가 맞습니다. '희안하다'는 표준 표기가 아닙니다. 비슷한 느낌의 말로 '이상하다', '신기하다'가 있지만, 표기는 반드시 '희한하다'로 기억해야 합니다.",
     examples: ["참 희한한 일이다.", "희한하게도 문제가 풀렸다.", "그런 희한한 소문이 돌았다.", "희한한 모양의 돌.", "말투가 조금 희한했다."],
     questions: [
-      { question: "참 ___ 일이다.", choices: ["희한한", "희안한"], answer: "희한한", explanation: "'희한하다'가 표준어입니다." },
-      { question: "___도 갑자기 비가 그쳤다.", choices: ["희한하게", "희안하게"], answer: "희한하게", explanation: "부사형도 '희한하게'가 맞습니다." },
-      { question: "그런 ___ 소문은 처음 들었다.", choices: ["희한한", "희안한"], answer: "희한한", explanation: "'희안한'은 틀린 표기입니다." },
-      { question: "모양이 참 ___.", choices: ["희한하다", "희안하다"], answer: "희한하다", explanation: "이상하고 드문 모양이라는 뜻입니다." },
-      { question: "결과가 ___ 나왔다.", choices: ["희한하게", "희안하게"], answer: "희한하게", explanation: "표준 표기는 '희한하게'입니다." }
+      { question: "참 ___ 일이다.", choices: ["희한한", "희안한"], answer: "희한한", explanation: "'희한하다'가 표준어입니다.", wrongExplanation: "'희안하다'와 그 활용형은 이 뜻의 표준 표기가 아닙니다. '희한하다'의 '한'을 유지합니다.", reviewHref: "/guide/common-mistakes#huihan-huian" },
+      { question: "___도 갑자기 비가 그쳤다.", choices: ["희한하게", "희안하게"], answer: "희한하게", explanation: "부사형도 '희한하게'가 맞습니다.", wrongExplanation: "'희안하다'와 그 활용형은 이 뜻의 표준 표기가 아닙니다. '희한하다'의 '한'을 유지합니다.", reviewHref: "/guide/common-mistakes#huihan-huian" },
+      { question: "그런 ___ 소문은 처음 들었다.", choices: ["희한한", "희안한"], answer: "희한한", explanation: "'희안한'은 틀린 표기입니다.", wrongExplanation: "'희안하다'와 그 활용형은 이 뜻의 표준 표기가 아닙니다. '희한하다'의 '한'을 유지합니다.", reviewHref: "/guide/common-mistakes#huihan-huian" },
+      { question: "모양이 참 ___.", choices: ["희한하다", "희안하다"], answer: "희한하다", explanation: "이상하고 드문 모양이라는 뜻입니다.", wrongExplanation: "'희안하다'와 그 활용형은 이 뜻의 표준 표기가 아닙니다. '희한하다'의 '한'을 유지합니다.", reviewHref: "/guide/common-mistakes#huihan-huian" },
+      { question: "결과가 ___ 나왔다.", choices: ["희한하게", "희안하게"], answer: "희한하게", explanation: "표준 표기는 '희한하게'입니다.", wrongExplanation: "'희안하다'와 그 활용형은 이 뜻의 표준 표기가 아닙니다. '희한하다'의 '한'을 유지합니다.", reviewHref: "/guide/common-mistakes#huihan-huian" }
     ]
   },
   {
@@ -352,14 +352,14 @@ export const additionalQuizzes: Quiz[] = [
     summary: "'어이없다'가 표준어이고 '어의없다'는 틀린 표기다.",
     tenSecondSummary: "너무 뜻밖이라 기가 막힌다는 뜻은 '어이없다'입니다. '어의없다'로 쓰지 않습니다.",
     seoContent:
-      "어이없다/어의없다는 인터넷 댓글에서 자주 틀리는 표현입니다. 표준 표기는 '어이없다'입니다. 너무 뜻밖이거나 터무니없어 기가 막힐 때 씁니다. '정말 어이없다', '어이없는 실수', '어이가 없다'가 맞습니다. '어의'는 임금의 병을 돌보던 의원을 가리키는 다른 말이므로, 황당함을 나타낼 때는 쓰지 않습니다.",
+      "어이없다/어의없다는 인터넷 댓글에서 자주 틀리는 표현입니다. 표준 표기는 '어이없다'입니다. 너무 뜻밖이거나 터무니없어 기가 막힐 때 씁니다. '정말 어이없다', '어이없는 실수', '어이가 없다'가 맞습니다. '어의'는 단어의 뜻이나 임금의 의원 등을 가리키는 다른 말이므로, 황당함을 나타낼 때는 쓰지 않습니다.",
     examples: ["정말 어이없다.", "어이없는 실수였다.", "말이 안 돼서 어이가 없다.", "그 변명은 어이없었다.", "어이없게도 또 틀렸다."],
     questions: [
-      { question: "정말 ___ 일이었다.", choices: ["어이없는", "어의없는"], answer: "어이없는", explanation: "'어이없다'가 표준어입니다." },
-      { question: "그 변명은 너무 ___.", choices: ["어이없다", "어의없다"], answer: "어이없다", explanation: "황당하다는 뜻은 '어이없다'입니다." },
-      { question: "말을 듣고 ___가 없었다.", choices: ["어이", "어의"], answer: "어이", explanation: "관용 표현은 '어이가 없다'입니다." },
-      { question: "___ 실수로 일정이 밀렸다.", choices: ["어이없는", "어의없는"], answer: "어이없는", explanation: "'어의없는'은 틀린 표기입니다." },
-      { question: "그는 ___ 웃었다.", choices: ["어이없게", "어의없게"], answer: "어이없게", explanation: "부사형도 '어이없게'가 맞습니다." }
+      { question: "정말 ___ 일이었다.", choices: ["어이없는", "어의없는"], answer: "어이없는", explanation: "'어이없다'가 표준어입니다.", wrongExplanation: "황당함은 '어이없다' 또는 '어이가 없다'로 나타냅니다. '어의'는 단어의 뜻이나 임금의 의원 등을 가리키는 다른 말입니다.", reviewHref: "/guide/common-mistakes#eoi-eoui" },
+      { question: "그 변명은 너무 ___.", choices: ["어이없다", "어의없다"], answer: "어이없다", explanation: "황당하다는 뜻은 '어이없다'입니다.", wrongExplanation: "황당함은 '어이없다' 또는 '어이가 없다'로 나타냅니다. '어의'는 단어의 뜻이나 임금의 의원 등을 가리키는 다른 말입니다.", reviewHref: "/guide/common-mistakes#eoi-eoui" },
+      { question: "말을 듣고 ___가 없었다.", choices: ["어이", "어의"], answer: "어이", explanation: "관용 표현은 '어이가 없다'입니다.", wrongExplanation: "황당함은 '어이없다' 또는 '어이가 없다'로 나타냅니다. '어의'는 단어의 뜻이나 임금의 의원 등을 가리키는 다른 말입니다.", reviewHref: "/guide/common-mistakes#eoi-eoui" },
+      { question: "___ 실수로 일정이 밀렸다.", choices: ["어이없는", "어의없는"], answer: "어이없는", explanation: "'어의없는'은 틀린 표기입니다.", wrongExplanation: "황당함은 '어이없다' 또는 '어이가 없다'로 나타냅니다. '어의'는 단어의 뜻이나 임금의 의원 등을 가리키는 다른 말입니다.", reviewHref: "/guide/common-mistakes#eoi-eoui" },
+      { question: "터무니없는 변명을 듣고 그는 ___ 웃었다.", choices: ["어이없게", "어의없게"], answer: "어이없게", explanation: "부사형도 '어이없게'가 맞습니다.", wrongExplanation: "황당함은 '어이없다' 또는 '어이가 없다'로 나타냅니다. '어의'는 단어의 뜻이나 임금의 의원 등을 가리키는 다른 말입니다.", reviewHref: "/guide/common-mistakes#eoi-eoui" }
     ]
   },
   {
@@ -374,11 +374,28 @@ export const additionalQuizzes: Quiz[] = [
       "설거지/설겆이는 생활 속에서 자주 쓰지만 표기가 헷갈리는 단어입니다. 표준 표기는 '설거지'입니다. '설거지를 하다', '설거지거리', '설거지가 밀렸다'처럼 씁니다. '설겆이'는 예전 표기처럼 보일 수 있지만 현재 표준어가 아닙니다. 주방일이나 집안일을 적을 때는 '설거지'로 통일하면 됩니다.",
     examples: ["설거지를 했다.", "설거지거리가 많다.", "설거지가 밀렸다.", "밥 먹고 설거지하자.", "그릇을 설거지통에 넣었다."],
     questions: [
-      { question: "밥을 먹고 ___를 했다.", choices: ["설거지", "설겆이"], answer: "설거지", explanation: "'설거지'가 표준 표기입니다." },
-      { question: "___거리가 너무 많다.", choices: ["설거지", "설겆이"], answer: "설거지", explanation: "'설거지거리'로 씁니다." },
-      { question: "오늘은 내가 ___할게.", choices: ["설거지", "설겆이"], answer: "설거지", explanation: "동사처럼 써도 '설거지하다'가 맞습니다." },
-      { question: "그릇을 ___통에 넣었다.", choices: ["설거지", "설겆이"], answer: "설거지", explanation: "합성어에서도 '설거지'를 씁니다." },
-      { question: "주말이라 ___가 밀렸다.", choices: ["설거지", "설겆이"], answer: "설거지", explanation: "'설겆이'는 표준 표기가 아닙니다." }
+      { question: "밥을 먹고 ___를 했다.", choices: ["설거지", "설겆이"], answer: "설거지", explanation: "'설거지'가 표준 표기입니다.", wrongExplanation: "'설겆이'는 현재 표준 표기가 아닙니다. 더 이상 쓰이지 않는 '설겆다'의 어형을 유지하지 않고 '설거지'로 적습니다.", reviewHref: "/guide/common-mistakes#seolgeoji-seolgeoji" },
+      { question: "___거리가 너무 많다.", choices: ["설거지", "설겆이"], answer: "설거지", explanation: "'설거지거리'로 씁니다.", wrongExplanation: "'설겆이'는 현재 표준 표기가 아닙니다. 더 이상 쓰이지 않는 '설겆다'의 어형을 유지하지 않고 '설거지'로 적습니다.", reviewHref: "/guide/common-mistakes#seolgeoji-seolgeoji" },
+      { question: "오늘은 내가 ___할게.", choices: ["설거지", "설겆이"], answer: "설거지", explanation: "동사처럼 써도 '설거지하다'가 맞습니다.", wrongExplanation: "'설겆이'는 현재 표준 표기가 아닙니다. 더 이상 쓰이지 않는 '설겆다'의 어형을 유지하지 않고 '설거지'로 적습니다.", reviewHref: "/guide/common-mistakes#seolgeoji-seolgeoji" },
+      { question: "그릇을 ___통에 넣었다.", choices: ["설거지", "설겆이"], answer: "설거지", explanation: "합성어에서도 '설거지'를 씁니다.", wrongExplanation: "'설겆이'는 현재 표준 표기가 아닙니다. 더 이상 쓰이지 않는 '설겆다'의 어형을 유지하지 않고 '설거지'로 적습니다.", reviewHref: "/guide/common-mistakes#seolgeoji-seolgeoji" },
+      { question: "주말이라 ___가 밀렸다.", choices: ["설거지", "설겆이"], answer: "설거지", explanation: "'설겆이'는 표준 표기가 아닙니다.", wrongExplanation: "'설겆이'는 현재 표준 표기가 아닙니다. 더 이상 쓰이지 않는 '설겆다'의 어형을 유지하지 않고 '설거지'로 적습니다.", reviewHref: "/guide/common-mistakes#seolgeoji-seolgeoji" }
     ]
   }
 ];
+
+export const commonMistakesQuiz: Quiz = {
+  slug: "common-mistakes",
+  keyword: "자주 틀리는 맞춤법 모음",
+  name: "자주 틀리는 맞춤법 종합 테스트",
+  title: "자주 틀리는 맞춤법 20문제 종합 테스트",
+  description: "낫다/낳다부터 설거지/설겆이까지 일상에서 자주 틀리는 표현 20개를 한 번에 점검합니다.",
+  summary: "짧게 외우기 좋은 맞춤법 20개를 한 문제씩 골라 종합 점검한다.",
+  tenSecondSummary: "각 표현의 의미와 문장 속 역할을 먼저 확인하세요. 소리가 비슷해도 의미나 문법 기능이 다르면 표기도 달라집니다.",
+  seoContent:
+    "자주 틀리는 맞춤법은 단어를 여러 번 보는 것보다 실제 문장에서 어떤 의미로 쓰였는지 판단할 때 더 오래 기억할 수 있습니다. 이 종합 테스트는 일상 대화, 업무 메시지, 학교 과제에서 자주 만나는 표현 20개를 한 문제씩 골라 구성했습니다. 먼저 도움 없이 문제를 풀고, 결과에서 틀린 이유를 확인한 다음 아래의 표현별 정리로 복습해 보세요. 단순히 정답만 외우기보다 비교·시간·이유·수단처럼 문장을 결정하는 단서를 함께 익히는 것이 목표입니다.",
+  examples: additionalQuizzes.slice(0, 5).map((quiz) => quiz.examples[0]),
+  questions: additionalQuizzes.map((quiz, index) => ({
+    ...quiz.questions[index % quiz.questions.length],
+    reviewHref: `/guide/common-mistakes#${quiz.slug}`
+  }))
+};

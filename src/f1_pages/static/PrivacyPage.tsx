@@ -17,22 +17,35 @@ export function PrivacyPage() {
       </section>
       <section aria-labelledby="cookies" className="mt-8">
         <h2 id="cookies" className="text-xl font-bold text-[var(--foreground)]">
-          쿠키 사용 가능성
+          쿠키와 Google 광고 서비스
         </h2>
         <p className="mt-3">
-          향후 서비스 개선, 방문 통계 확인, 광고 운영을 위해 쿠키가 사용될 수 있습니다. 브라우저 설정을 통해 쿠키
-          저장을 거부하거나 삭제할 수 있습니다.
+          이 사이트는 Google AdSense 연결 및 사이트 심사를 위해 Google 광고 태그를 사용합니다. 광고가 표시되지 않는
+          기간에도 광고 태그가 Google 서버에 연결될 수 있습니다. Google과 제3자 광고 사업자는 쿠키, 웹 비콘, IP 주소
+          또는 이와 유사한 식별자를 사용하여 광고 제공, 부정 사용 방지, 성과 측정을 수행할 수 있습니다.
         </p>
       </section>
       <section aria-labelledby="ads" className="mt-8">
         <h2 id="ads" className="text-xl font-bold text-[var(--foreground)]">
-          광고 및 분석 도구
+          광고 개인 최적화와 선택권
         </h2>
         <p className="mt-3">
-          추후 Google AdSense, Google Analytics 같은 광고 및 분석 도구를 사용할 수 있습니다. 이 경우 해당 도구가
-          쿠키, 기기 정보, 방문 기록 등 비식별 정보를 처리할 수 있으며, 관련 정책은 각 서비스의 개인정보 보호정책을
-          따릅니다.
+          Google은 사용자의 이 사이트 및 다른 웹사이트 방문 기록을 바탕으로 개인 맞춤 광고를 제공할 수 있습니다.
+          사용자는 Google 광고 설정에서 개인 맞춤 광고를 끄거나 브라우저 설정에서 쿠키를 차단·삭제할 수 있습니다.
         </p>
+        <ul className="mt-3 space-y-2 font-semibold text-[var(--accent-strong)]">
+          <li><a href="https://adssettings.google.com/" target="_blank" rel="noreferrer">Google 광고 설정 ↗</a></li>
+          <li><a href="https://policies.google.com/technologies/partner-sites?hl=ko" target="_blank" rel="noreferrer">Google 파트너 사이트의 데이터 사용 방식 ↗</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="contact" className="mt-8">
+        <h2 id="contact" className="text-xl font-bold text-[var(--foreground)]">문의 및 변경 안내</h2>
+        <p className="mt-3">
+          개인정보 또는 사이트 운영에 관한 문의는
+          {" "}<a className="font-bold text-[var(--accent-strong)]" href="https://github.com/leeseolin/hetgalim-test/issues" target="_blank" rel="noreferrer">공개 이슈 페이지</a>를 이용해 주세요.
+          정책 내용이 변경되면 이 페이지와 시행일을 함께 갱신합니다.
+        </p>
+        <p className="mt-3 text-sm">시행일: 2026년 8월 27일</p>
       </section>
     </StaticPageShell>
   );

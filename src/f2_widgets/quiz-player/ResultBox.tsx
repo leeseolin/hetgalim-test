@@ -1,6 +1,7 @@
 "use client";
 
 import type { QuizQuestion } from "@/f4_entities/quiz/types";
+import { QuestionExplanation } from "@/f2_widgets/quiz-learning/QuestionExplanation";
 
 type ResultBoxProps = {
   questions: QuizQuestion[];
@@ -62,7 +63,10 @@ export function ResultBox({ questions, selectedAnswers, onRetry }: ResultBoxProp
                 <p className="mt-2 font-semibold">{question.question}</p>
                 <p className="mt-3 text-sm text-[var(--danger)]">내 답: {selectedAnswer}</p>
                 <p className="mt-1 text-sm text-[var(--accent-strong)]">정답: {question.answer}</p>
-                <p className="mt-3 leading-7 text-[var(--muted)]">{question.explanation}</p>
+                <QuestionExplanation question={question} />
+                {question.reviewHref && (
+                  <a className="mt-3 inline-block text-sm font-bold text-[var(--accent-strong)] underline underline-offset-4" href={question.reviewHref}>관련 설명 복습하기 →</a>
+                )}
               </li>
             ))}
           </ul>

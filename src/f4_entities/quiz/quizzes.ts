@@ -1,5 +1,4 @@
 import type { Quiz, QuizSlug } from "./types";
-import { additionalQuizzes } from "./additionalQuizzes";
 
 export const quizzes: Quiz[] = [
   {
@@ -24,61 +23,81 @@ export const quizzes: Quiz[] = [
         question: "숙제는 다 했니? 이제 자도 ___",
         choices: ["되", "돼"],
         answer: "돼",
-        explanation: "'돼'는 '되어'로 바꿔 자연스러우면 맞습니다. '자도 되어'가 자연스럽기 때문에 '돼'가 맞습니다."
+        explanation: "'되-'에 종결 어미 '-어'가 붙은 '되어'를 줄인 '돼'가 맞습니다. 어간 '되'만으로 문장을 끝낼 수 없습니다.",
+        wrongExplanation: "'되'는 어간이라 이 허락 표현을 끝맺지 못합니다. '되어'를 줄인 '돼'로 마무리합니다.",
+        reviewHref: "/quiz/doe-dwae#rule-guide"
       },
       {
         question: "일이 잘 ___고 있어.",
         choices: ["되", "돼"],
         answer: "되",
-        explanation: "'되고 있어'는 '되다'의 어간 '되'에 어미 '-고'가 붙은 형태입니다. '돼고'는 쓰지 않습니다."
+        explanation: "'되고 있어'는 '되다'의 어간 '되'에 어미 '-고'가 붙은 형태입니다. '돼고'는 쓰지 않습니다.",
+        wrongExplanation: "'돼고'를 풀면 '되어고'가 되어 어미 '-고' 앞에 불필요한 '-어'가 끼어듭니다.",
+        reviewHref: "/quiz/doe-dwae#rule-guide"
       },
       {
         question: "그렇게 하면 절대 안 ___",
         choices: ["되", "돼"],
         answer: "돼",
-        explanation: "'안 되어'로 바꾸어도 자연스럽기 때문에 줄임말인 '안 돼'가 맞습니다."
+        explanation: "'안 되어'로 바꾸어도 자연스럽기 때문에 줄임말인 '안 돼'가 맞습니다.",
+        wrongExplanation: "금지의 뜻으로 끝맺으려면 '-어'가 필요합니다. '안 되'는 어간에서 끊긴 표기입니다.",
+        reviewHref: "/quiz/doe-dwae#rule-guide"
       },
       {
         question: "언젠가는 좋은 사람이 ___고 싶다.",
         choices: ["되", "돼"],
         answer: "되",
-        explanation: "'되고 싶다'는 '되다'의 어간 '되'에 어미 '-고'가 붙은 형태입니다. '돼고'는 쓰지 않습니다."
+        explanation: "'되고 싶다'는 '되다'의 어간 '되'에 어미 '-고'가 붙은 형태입니다. '돼고'는 쓰지 않습니다.",
+        wrongExplanation: "희망을 나타내는 '-고 싶다' 앞은 어간 '되-'입니다. '돼고 싶다'로 적지 않습니다.",
+        reviewHref: "/quiz/doe-dwae#rule-guide"
       },
       {
         question: "오늘 안에 제출하면 ___나요?",
         choices: ["되", "돼"],
         answer: "되",
-        explanation: "'되나요'는 '되다'의 활용형입니다. '되어나요'가 어색하므로 '돼나요'가 아니라 '되나요'가 맞습니다."
+        explanation: "'되나요'는 '되다'의 활용형입니다. '되어나요'가 어색하므로 '돼나요'가 아니라 '되나요'가 맞습니다.",
+        wrongExplanation: "'-나요'는 '되-'에 바로 붙습니다. '돼나요'는 '되어나요'처럼 어미 결합이 맞지 않습니다.",
+        reviewHref: "/quiz/doe-dwae#rule-guide"
       },
       {
         question: "이 버튼을 누르면 저장이 ___요.",
         choices: ["되", "돼"],
         answer: "돼",
-        explanation: "'저장이 되어요'가 자연스럽고, 이를 줄이면 '저장이 돼요'가 됩니다."
+        explanation: "'저장이 되어요'가 자연스럽고, 이를 줄이면 '저장이 돼요'가 됩니다.",
+        wrongExplanation: "'요'만 어간에 붙인 '되요'는 틀립니다. '되- + -어요'를 줄여 '돼요'로 적습니다.",
+        reviewHref: "/quiz/doe-dwae#rule-guide"
       },
       {
         question: "네가 원하는 대로 ___면 좋겠다.",
         choices: ["되", "돼"],
         answer: "되",
-        explanation: "'되면'은 '되다'의 어간 '되'에 어미 '-면'이 붙은 말입니다. '돼면'은 표준 표기가 아닙니다."
+        explanation: "'되면'은 '되다'의 어간 '되'에 어미 '-면'이 붙은 말입니다. '돼면'은 표준 표기가 아닙니다.",
+        wrongExplanation: "조건의 '-면' 앞에는 '되-'를 씁니다. '돼면'은 '되어면'처럼 불필요한 '-어'가 들어갑니다.",
+        reviewHref: "/quiz/doe-dwae#rule-guide"
       },
       {
         question: "이 정도면 충분히 설명이 ___었다.",
         choices: ["되", "돼"],
         answer: "되",
-        explanation: "'되었다'는 원형에 가까운 표기입니다. 줄이면 '됐다'가 되지만, 빈칸 뒤에 '었다'가 있으므로 '되'가 맞습니다."
+        explanation: "'되었다'는 어간 '되-'에 '-었-'과 '-다'가 결합한 활용형입니다. 줄이면 '됐다'가 되지만, 빈칸 뒤에 '었다'가 있으므로 '되'가 맞습니다.",
+        wrongExplanation: "'돼'를 넣으면 '돼었다'가 됩니다. 이 빈칸은 뒤의 '었다'와 함께 읽어야 하며, 문장 전체를 줄이면 '설명이 됐다'입니다.",
+        reviewHref: "/quiz/doe-dwae#rule-guide"
       },
       {
         question: "지금 출발해도 ___?",
         choices: ["되", "돼"],
         answer: "돼",
-        explanation: "'출발해도 되어?'가 자연스럽기 때문에 줄임말인 '돼'가 맞습니다."
+        explanation: "허락을 묻는 종결형 '되어'를 줄이면 '돼'입니다. 어간 '되'만으로 의문문을 끝내지 않습니다.",
+        wrongExplanation: "'되?'는 어간만 남아 문장을 끝맺지 못합니다. '돼?'에는 종결 어미 '-어'가 포함되어 있습니다.",
+        reviewHref: "/quiz/doe-dwae#rule-guide"
       },
       {
         question: "이 문제는 곧 해결___ 것이다.",
         choices: ["될", "됄"],
         answer: "될",
-        explanation: "'될'은 '되다'의 관형형입니다. '됄'은 표준어가 아닙니다."
+        explanation: "'될'은 '되다'의 관형형입니다. '됄'은 표준어가 아닙니다.",
+        wrongExplanation: "'됄'은 '되어'에 '-ㄹ'을 더한 잘못된 표기입니다. '되-'에 관형사형 어미 '-ㄹ'을 붙여 '될'로 씁니다.",
+        reviewHref: "/quiz/doe-dwae#rule-guide"
       }
     ]
   },
@@ -104,61 +123,81 @@ export const quizzes: Quiz[] = [
         question: "오늘은 비가 와서 밖에 ___ 나갔다.",
         choices: ["안", "않"],
         answer: "안",
-        explanation: "'안'은 뒤의 동사 '나갔다'를 부정하는 부사입니다."
+        explanation: "'안'은 뒤의 동사 '나갔다'를 부정하는 부사입니다.",
+        wrongExplanation: "'않 나갔다'는 용언의 어간 '않-' 뒤에 다른 동사를 바로 놓은 꼴입니다. '나가지 않았다'로 바꾸면 '않'을 쓸 수 있습니다.",
+        reviewHref: "/quiz/an-ahn#rule-guide"
       },
       {
         question: "그 약속은 잊지 ___았다.",
         choices: ["안", "않"],
         answer: "않",
-        explanation: "'잊지 않았다'는 '잊지 아니하였다'의 줄임 표현이므로 '않'이 맞습니다."
+        explanation: "'잊지 않았다'는 '잊지 아니하였다'의 줄임 표현이므로 '않'이 맞습니다.",
+        wrongExplanation: "'안았다'는 '안다'의 과거형이라 포옹의 뜻이 됩니다. 잊지 않았다는 부정은 '않았다'입니다.",
+        reviewHref: "/quiz/an-ahn#rule-guide"
       },
       {
         question: "나는 매운 음식을 잘 먹지 ___는다.",
         choices: ["안", "않"],
         answer: "않",
-        explanation: "'먹지 않는다' 구조에서는 '아니하-'가 줄어든 '않'을 씁니다."
+        explanation: "'먹지 않는다' 구조에서는 '아니하-'가 줄어든 '않'을 씁니다.",
+        wrongExplanation: "'안는다'는 '안다'의 활용형입니다. '-지' 다음의 부정 용언은 '않는다'로 적습니다.",
+        reviewHref: "/quiz/an-ahn#rule-guide"
       },
       {
         question: "아직 숙제를 ___ 했다.",
         choices: ["안", "않"],
         answer: "안",
-        explanation: "'안 했다'는 '하지 않았다'와 같은 뜻으로, 동사 앞을 부정하는 부사 '안'이 맞습니다."
+        explanation: "'안 했다'는 '하지 않았다'와 같은 뜻으로, 동사 앞을 부정하는 부사 '안'이 맞습니다.",
+        wrongExplanation: "'않 했다'로 두 용언을 나란히 놓지 않습니다. 부사 '안'으로 '했다'를 부정합니다.",
+        reviewHref: "/quiz/an-ahn#rule-guide"
       },
       {
         question: "그 이야기는 아직 확인이 ___ 됐다.",
         choices: ["안", "않"],
         answer: "안",
-        explanation: "'안 됐다'는 '됐다'를 부정하는 표현이므로 부사 '안'을 씁니다."
+        explanation: "'안 됐다'는 '됐다'를 부정하는 표현이므로 부사 '안'을 씁니다.",
+        wrongExplanation: "'않 됐다'는 '않다'의 활용이 아닙니다. 확인되지 않았다는 뜻이면 '안 됐다' 또는 '되지 않았다'입니다.",
+        reviewHref: "/quiz/an-ahn#rule-guide"
       },
       {
         question: "걱정하지 ___아도 괜찮아.",
         choices: ["안", "않"],
         answer: "않",
-        explanation: "'걱정하지 않아도'는 '걱정하지 아니하여도'의 준말로 볼 수 있어 '않'이 맞습니다."
+        explanation: "'걱정하지 않아도'는 '걱정하지 아니하여도'의 준말로 볼 수 있어 '않'이 맞습니다.",
+        wrongExplanation: "'안아도'는 안는 행동을 나타낼 수 있습니다. 걱정을 하지 않아도 된다는 뜻에는 '않아도'가 필요합니다.",
+        reviewHref: "/quiz/an-ahn#rule-guide"
       },
       {
         question: "문이 잘 ___ 열린다.",
         choices: ["안", "않"],
         answer: "안",
-        explanation: "'안 열린다'는 '열린다'를 부정하는 말이므로 부사 '안'을 씁니다."
+        explanation: "'안 열린다'는 '열린다'를 부정하는 말이므로 부사 '안'을 씁니다.",
+        wrongExplanation: "'않 열린다'는 어간 뒤에 어미가 이어지지 않습니다. '열리지 않는다'라면 '않'을 씁니다.",
+        reviewHref: "/quiz/an-ahn#rule-guide"
       },
       {
         question: "이 방법은 어렵지 ___고 편하다.",
         choices: ["안", "않"],
         answer: "않",
-        explanation: "'어렵지 않고'에서 '않고'는 '아니하고'가 줄어든 말입니다."
+        explanation: "'어렵지 않고'에서 '않고'는 '아니하고'가 줄어든 말입니다.",
+        wrongExplanation: "'안고'는 품에 안는 동작입니다. 어렵지 않다는 부정을 이어 주는 말은 '않고'입니다.",
+        reviewHref: "/quiz/an-ahn#rule-guide"
       },
       {
         question: "오늘따라 집중이 ___ 된다.",
         choices: ["안", "않"],
         answer: "안",
-        explanation: "'안 된다'는 '된다'를 부정하는 표현입니다. 띄어 써서 '안 된다'로 적습니다."
+        explanation: "'안 된다'는 '된다'를 부정하는 표현입니다. 띄어 써서 '안 된다'로 적습니다.",
+        wrongExplanation: "'않 된다' 대신 '안 된다'로 씁니다. '집중이 되지 않는다'로 바꾸면 '않'이 들어갑니다.",
+        reviewHref: "/quiz/an-ahn#rule-guide"
       },
       {
         question: "다시는 늦지 ___겠습니다.",
         choices: ["안", "않"],
         answer: "않",
-        explanation: "'늦지 않겠습니다'는 '-지 않다' 구조이므로 '않'이 맞습니다."
+        explanation: "'늦지 않겠습니다'는 '-지 않다' 구조이므로 '않'이 맞습니다.",
+        wrongExplanation: "'안겠습니다'는 안는 행동의 의지가 됩니다. 늦지 않겠다는 약속에는 '-지 않겠습니다'를 씁니다.",
+        reviewHref: "/quiz/an-ahn#rule-guide"
       }
     ]
   },
@@ -184,61 +223,81 @@ export const quizzes: Quiz[] = [
         question: "___지 모르게 마음이 불안하다.",
         choices: ["왠", "웬"],
         answer: "왠",
-        explanation: "'왠지'는 '왜인지'가 줄어든 말이므로 '왠'을 씁니다."
+        explanation: "'왠지'는 '왜인지'가 줄어든 말이므로 '왠'을 씁니다.",
+        wrongExplanation: "'웬지'로 적지 않습니다. 이유를 모르겠다는 이 부사는 '왜인지'를 줄인 '왠지'입니다.",
+        reviewHref: "/quiz/waen-wen#rule-guide"
       },
       {
         question: "이게 ___일이야?",
         choices: ["왠", "웬"],
         answer: "웬",
-        explanation: "'웬일'은 '어찌 된 일'이라는 뜻입니다. '왠일'은 틀린 표기입니다."
+        explanation: "'웬일'은 '어찌 된 일'이라는 뜻입니다. '왠일'은 틀린 표기입니다.",
+        wrongExplanation: "'왠일'은 '왜인지'의 줄임이 아닙니다. 뜻밖의 일은 한 단어 '웬일'로 씁니다.",
+        reviewHref: "/quiz/waen-wen#rule-guide"
       },
       {
         question: "문 앞에 ___ 사람이 서 있었다.",
         choices: ["왠", "웬"],
         answer: "웬",
-        explanation: "명사 '사람' 앞에서 '어떠한'의 뜻으로 쓰이므로 '웬'이 맞습니다."
+        explanation: "명사 '사람' 앞에서 '어떠한'의 뜻으로 쓰이므로 '웬'이 맞습니다.",
+        wrongExplanation: "'왠'을 독립된 관형사처럼 '사람' 앞에 쓰지 않습니다. '어찌 된 사람'이면 '웬 사람'입니다.",
+        reviewHref: "/quiz/waen-wen#rule-guide"
       },
       {
         question: "오늘은 ___지 일이 잘 풀린다.",
         choices: ["왠", "웬"],
         answer: "왠",
-        explanation: "'왠지'는 이유를 정확히 모를 때 쓰는 부사입니다."
+        explanation: "'왠지'는 이유를 정확히 모를 때 쓰는 부사입니다.",
+        wrongExplanation: "일이 잘 풀리는 이유를 모르는 느낌입니다. 명사를 꾸미는 '웬'과 부사 '왠지'는 역할이 다릅니다.",
+        reviewHref: "/quiz/waen-wen#rule-guide"
       },
       {
         question: "___만하면 이번 주 안에 끝내자.",
         choices: ["왠", "웬"],
         answer: "웬",
-        explanation: "'웬만하면'이 표준 표기입니다. '왠만하면'은 틀린 표현입니다."
+        explanation: "'웬만하면'이 표준 표기입니다. '왠만하면'은 틀린 표현입니다.",
+        wrongExplanation: "'왠만하다'는 표준 표기가 아닙니다. '웬만하다'의 활용형인 '웬만하면'을 씁니다.",
+        reviewHref: "/quiz/waen-wen#rule-guide"
       },
       {
         question: "갑자기 ___ 전화가 이렇게 많이 오지?",
         choices: ["왠", "웬"],
         answer: "웬",
-        explanation: "'어찌 된 전화'라는 뜻으로 명사 앞에 쓰였으므로 '웬'이 맞습니다."
+        explanation: "'어찌 된 전화'라는 뜻으로 명사 앞에 쓰였으므로 '웬'이 맞습니다.",
+        wrongExplanation: "'왠 전화'는 이유를 뜻하는 부사 '왠지'도, 명사를 꾸미는 '웬'도 아닙니다.",
+        reviewHref: "/quiz/waen-wen#rule-guide"
       },
       {
         question: "___지 오늘따라 잠이 오지 않는다.",
         choices: ["왠", "웬"],
         answer: "왠",
-        explanation: "'왠지'는 '왜인지'의 준말입니다."
+        explanation: "'왠지'는 '왜인지'의 준말입니다.",
+        wrongExplanation: "'웬지'라는 부사 대신 '왠지'를 씁니다. '웬 잠'처럼 명사를 꾸미는 상황과 구별합니다.",
+        reviewHref: "/quiz/waen-wen#rule-guide"
       },
       {
         question: "길에서 ___ 낯선 소리가 들렸다.",
         choices: ["왠", "웬"],
         answer: "웬",
-        explanation: "명사 '소리' 앞에서 꾸며 주는 관형사이므로 '웬'을 씁니다."
+        explanation: "명사 '소리' 앞에서 꾸며 주는 관형사이므로 '웬'을 씁니다.",
+        wrongExplanation: "'왠'은 '낯선 소리'를 꾸미는 말로 쓰지 않습니다. 의외의 소리라는 뜻에는 '웬'입니다.",
+        reviewHref: "/quiz/waen-wen#rule-guide"
       },
       {
         question: "이 시간에 ___ 손님이 오셨어요?",
         choices: ["왠", "웬"],
         answer: "웬",
-        explanation: "'어찌 된 손님'이라는 뜻이므로 '웬 손님'이 맞습니다."
+        explanation: "'어찌 된 손님'이라는 뜻이므로 '웬 손님'이 맞습니다.",
+        wrongExplanation: "'왠 손님'은 표준 표기가 아닙니다. 뜻밖의 손님을 묻는 관형사는 '웬'입니다.",
+        reviewHref: "/quiz/waen-wen#rule-guide"
       },
       {
         question: "___지 웃음이 나왔다.",
         choices: ["왠", "웬"],
         answer: "왠",
-        explanation: "이유를 정확히 알 수 없다는 뜻의 '왠지'가 맞습니다."
+        explanation: "이유를 정확히 알 수 없다는 뜻의 '왠지'가 맞습니다.",
+        wrongExplanation: "뚜렷한 이유 없이 웃었다는 뜻입니다. '웬지'가 아니라 '왠지'로 적습니다.",
+        reviewHref: "/quiz/waen-wen#rule-guide"
       }
     ]
   },
@@ -264,61 +323,81 @@ export const quizzes: Quiz[] = [
         question: "이 문제는 ___ 풀어야 하나요?",
         choices: ["어떻게", "어떡해"],
         answer: "어떻게",
-        explanation: "방법을 묻는 문장이므로 '어떻게'가 맞습니다."
+        explanation: "방법을 묻는 문장이므로 '어떻게'가 맞습니다.",
+        wrongExplanation: "'어떡해 풀어야'는 '어떻게 해 풀어야'가 되어 서술어가 겹칩니다.",
+        reviewHref: "/quiz/eotteoke-eotteokhae#rule-guide"
       },
       {
-        question: "지갑을 두고 왔어. 나 ___?",
+        question: "지갑을 두고 왔어. 나 ___? (서술어를 생략하지 않은 표현을 고르세요.)",
         choices: ["어떻게", "어떡해"],
         answer: "어떡해",
-        explanation: "'어떻게 해?'가 줄어든 말이므로 문장 끝에서는 '어떡해'가 자연스럽습니다."
+        explanation: "'어떻게 해?'가 줄어든 말이므로 문장 끝에서는 '어떡해'가 자연스럽습니다.",
+        wrongExplanation: "이 문장은 해결 행동을 묻는 뜻입니다. '어떻게'만 쓰면 뒤의 '해'가 생략된 말이므로, 생략 없이 완성할 때는 '어떡해'입니다.",
+        reviewHref: "/quiz/eotteoke-eotteokhae#rule-guide"
       },
       {
         question: "그 사람을 ___ 설득했어?",
         choices: ["어떻게", "어떡해"],
         answer: "어떻게",
-        explanation: "설득한 방법을 묻고 있으므로 '어떻게'를 씁니다."
+        explanation: "설득한 방법을 묻고 있으므로 '어떻게'를 씁니다.",
+        wrongExplanation: "'어떡해 설득했어'는 '해'와 '설득했어'가 겹칩니다. 방법을 꾸미는 '어떻게'를 씁니다.",
+        reviewHref: "/quiz/eotteoke-eotteokhae#rule-guide"
       },
       {
-        question: "비밀번호를 잊어버리면 ___?",
+        question: "비밀번호를 잊어버리면 ___? (서술어를 생략하지 않은 표현을 고르세요.)",
         choices: ["어떻게", "어떡해"],
         answer: "어떡해",
-        explanation: "'어떻게 해?'라는 뜻이므로 '어떡해'가 맞습니다."
+        explanation: "'어떻게 해?'라는 뜻이므로 '어떡해'가 맞습니다.",
+        wrongExplanation: "'어떻게'는 뒤에 '해' 같은 서술어를 따로 붙여야 완결됩니다. 이 문제는 서술어를 생략하지 않은 형태를 고릅니다.",
+        reviewHref: "/quiz/eotteoke-eotteokhae#rule-guide"
       },
       {
         question: "이 많은 일을 혼자 ___ 다 했어?",
         choices: ["어떻게", "어떡해"],
         answer: "어떻게",
-        explanation: "일을 해낸 방식이나 과정을 묻는 표현이므로 '어떻게'가 맞습니다."
+        explanation: "일을 해낸 방식이나 과정을 묻는 표현이므로 '어떻게'가 맞습니다.",
+        wrongExplanation: "'어떡해 다 했어'는 '해'가 중복됩니다. 혼자 일을 한 방법에는 '어떻게'가 맞습니다.",
+        reviewHref: "/quiz/eotteoke-eotteokhae#rule-guide"
       },
       {
-        question: "갑자기 발표하라고 하면 ___?",
+        question: "갑자기 발표하라고 하면 ___? (서술어를 생략하지 않은 표현을 고르세요.)",
         choices: ["어떻게", "어떡해"],
         answer: "어떡해",
-        explanation: "난처한 상황에서 '어떻게 해?'라는 뜻으로 쓰였으므로 '어떡해'가 맞습니다."
+        explanation: "난처한 상황에서 '어떻게 해?'라는 뜻으로 쓰였으므로 '어떡해'가 맞습니다.",
+        wrongExplanation: "해결 행동을 묻는 문장을 완결해야 하므로 '어떻게 해'의 준말을 씁니다. 대화에서 '해'를 생략한 '어떻게?'와는 구별합니다.",
+        reviewHref: "/quiz/eotteoke-eotteokhae#rule-guide"
       },
       {
         question: "선생님께 ___ 말씀드리는 게 좋을까?",
         choices: ["어떻게", "어떡해"],
         answer: "어떻게",
-        explanation: "말씀드리는 방법을 묻고 있으므로 '어떻게'를 씁니다."
+        explanation: "말씀드리는 방법을 묻고 있으므로 '어떻게'를 씁니다.",
+        wrongExplanation: "'어떡해 말씀드리는'은 서술어 '해'가 이미 포함되어 어색합니다. 방법을 꾸미는 부사형이 필요합니다.",
+        reviewHref: "/quiz/eotteoke-eotteokhae#rule-guide"
       },
       {
-        question: "내일까지 못 끝내면 정말 ___.",
+        question: "내일까지 못 끝내면 정말 ___. (서술어를 생략하지 않은 표현을 고르세요.)",
         choices: ["어떻게", "어떡해"],
         answer: "어떡해",
-        explanation: "문장 끝에서 걱정이나 난처함을 나타내는 '어떡해'가 자연스럽습니다."
+        explanation: "문장 끝에서 걱정이나 난처함을 나타내는 '어떡해'가 자연스럽습니다.",
+        wrongExplanation: "'어떻게'만으로 걱정의 서술어를 완성하지 않습니다. 말줄임 없이 '어떻게 해'를 나타내는 선택지는 '어떡해'입니다.",
+        reviewHref: "/quiz/eotteoke-eotteokhae#rule-guide"
       },
       {
         question: "이 앱은 ___ 사용하는 거야?",
         choices: ["어떻게", "어떡해"],
         answer: "어떻게",
-        explanation: "사용 방법을 묻는 문장이므로 '어떻게'가 맞습니다."
+        explanation: "사용 방법을 묻는 문장이므로 '어떻게'가 맞습니다.",
+        wrongExplanation: "'어떡해 사용하는'에는 '해'가 불필요하게 들어갑니다. 사용 방법을 물을 때는 '어떻게'입니다.",
+        reviewHref: "/quiz/eotteoke-eotteokhae#rule-guide"
       },
       {
         question: "길을 잃으면 ___ 해야 하지?",
         choices: ["어떻게", "어떡해"],
         answer: "어떻게",
-        explanation: "뒤에 '해야 하지'가 이어져 방법을 묻고 있으므로 '어떻게'가 맞습니다."
+        explanation: "뒤에 '해야 하지'가 이어져 방법을 묻고 있으므로 '어떻게'가 맞습니다.",
+        wrongExplanation: "'어떡해 해야'를 풀면 '어떻게 해 해야'가 됩니다. 뒤에 '해야 하지'가 있으므로 '어떻게'입니다.",
+        reviewHref: "/quiz/eotteoke-eotteokhae#rule-guide"
       }
     ]
   },
@@ -344,61 +423,81 @@ export const quizzes: Quiz[] = [
         question: "팀장님께 보고서 ___를 올렸다.",
         choices: ["결재", "결제"],
         answer: "결재",
-        explanation: "보고서를 승인받는 상황이므로 '결재'가 맞습니다."
+        explanation: "보고서를 승인받는 상황이므로 '결재'가 맞습니다.",
+        wrongExplanation: "'결제'는 돈을 치르는 일입니다. 보고서를 검토해 승인받는 절차는 금액 지불과 다릅니다.",
+        reviewHref: "/quiz/approval-payment#rule-guide"
       },
       {
         question: "카드 ___가 정상적으로 완료되었습니다.",
         choices: ["결재", "결제"],
         answer: "결제",
-        explanation: "대금을 지불하는 상황에서는 '결제'를 씁니다."
+        explanation: "대금을 지불하는 상황에서는 '결제'를 씁니다.",
+        wrongExplanation: "'결재'는 상급자의 승인입니다. 카드로 물건값을 치른 사실에는 '결제'를 씁니다.",
+        reviewHref: "/quiz/approval-payment#rule-guide"
       },
       {
         question: "지출 품의서가 아직 ___ 대기 중이다.",
         choices: ["결재", "결제"],
         answer: "결재",
-        explanation: "품의서 승인을 기다리는 상황이므로 '결재'가 맞습니다."
+        explanation: "품의서 승인을 기다리는 상황이므로 '결재'가 맞습니다.",
+        wrongExplanation: "품의서가 승인 대기 중이지 대금을 치르는 중은 아닙니다. 지출을 승인받아도 결제는 별도입니다.",
+        reviewHref: "/quiz/approval-payment#rule-guide"
       },
       {
         question: "온라인 쇼핑몰에서 간편 ___를 이용했다.",
         choices: ["결재", "결제"],
         answer: "결제",
-        explanation: "물건값을 치르는 수단은 '결제'입니다."
+        explanation: "물건값을 치르는 수단은 '결제'입니다.",
+        wrongExplanation: "간편 지불 서비스를 '간편 결재'라 하지 않습니다. 안건 승인과 결제 수단을 구별합니다.",
+        reviewHref: "/quiz/approval-payment#rule-guide"
       },
       {
         question: "사장님 ___가 나야 계약을 진행할 수 있다.",
         choices: ["결재", "결제"],
         answer: "결재",
-        explanation: "상급자의 승인이 필요한 상황이므로 '결재'가 맞습니다."
+        explanation: "상급자의 승인이 필요한 상황이므로 '결재'가 맞습니다.",
+        wrongExplanation: "사장님의 승인이 계약 진행의 조건입니다. 대금 지불 자체라면 '결제'를 쓰겠지만 여기서는 승인입니다.",
+        reviewHref: "/quiz/approval-payment#rule-guide"
       },
       {
         question: "이번 달 통신비 자동 ___일은 25일이다.",
         choices: ["결재", "결제"],
         answer: "결제",
-        explanation: "요금을 자동으로 지불하는 날이므로 '결제일'이 맞습니다."
+        explanation: "요금을 자동으로 지불하는 날이므로 '결제일'이 맞습니다.",
+        wrongExplanation: "통신비를 내는 날짜는 '결제일'입니다. 품의서 승인 날짜인 '결재일'과 구별합니다.",
+        reviewHref: "/quiz/approval-payment#rule-guide"
       },
       {
         question: "문서 ___ 라인이 변경되었습니다.",
         choices: ["결재", "결제"],
         answer: "결재",
-        explanation: "문서를 승인하는 절차나 순서를 말하므로 '결재 라인'이 맞습니다."
+        explanation: "문서를 승인하는 절차나 순서를 말하므로 '결재 라인'이 맞습니다.",
+        wrongExplanation: "문서 승인자의 순서는 '결재 라인'입니다. 물건값을 내는 과정의 뜻이 아닙니다.",
+        reviewHref: "/quiz/approval-payment#rule-guide"
       },
       {
         question: "상품권으로도 ___할 수 있나요?",
         choices: ["결재", "결제"],
         answer: "결제",
-        explanation: "상품권으로 값을 치르는 상황이므로 '결제'가 맞습니다."
+        explanation: "상품권으로 값을 치르는 상황이므로 '결제'가 맞습니다.",
+        wrongExplanation: "상품권은 대금을 치르는 수단입니다. 문서의 허가를 뜻하는 '결재'와 맞지 않습니다.",
+        reviewHref: "/quiz/approval-payment#rule-guide"
       },
       {
         question: "부장님이 휴가 신청서를 ___하셨다.",
         choices: ["결재", "결제"],
         answer: "결재",
-        explanation: "신청서를 승인했다는 뜻이므로 '결재'가 맞습니다."
+        explanation: "신청서를 승인했다는 뜻이므로 '결재'가 맞습니다.",
+        wrongExplanation: "휴가 신청을 허가하는 것은 '결재'입니다. 휴가 신청서의 값을 지불하는 상황이 아닙니다.",
+        reviewHref: "/quiz/approval-payment#rule-guide"
       },
       {
         question: "영수증에는 ___ 금액이 표시된다.",
         choices: ["결재", "결제"],
         answer: "결제",
-        explanation: "영수증의 금액은 실제 지불한 금액이므로 '결제 금액'이 맞습니다."
+        explanation: "영수증의 금액은 실제 지불한 금액이므로 '결제 금액'이 맞습니다.",
+        wrongExplanation: "영수증은 대금 지불의 기록입니다. 상급자가 승인한 금액과 결제한 금액은 개념이 다릅니다.",
+        reviewHref: "/quiz/approval-payment#rule-guide"
       }
     ]
   },
@@ -424,61 +523,81 @@ export const quizzes: Quiz[] = [
         question: "오늘이 ___이야?",
         choices: ["며칠", "몇일"],
         answer: "며칠",
-        explanation: "날짜를 물을 때는 '며칠'이 표준 표기입니다. '몇일'은 표준어가 아닙니다."
+        explanation: "날짜를 물을 때는 '며칠'이 표준 표기입니다. '몇일'은 표준어가 아닙니다.",
+        wrongExplanation: "'몇일'이나 '몇 일'로 날짜를 적지 않습니다. '몇 월'과 달리 이 말은 '며칠'로 적습니다.",
+        reviewHref: "/quiz/myeochil-myeotil#rule-guide"
       },
       {
         question: "휴가는 ___ 동안 다녀올 예정이야?",
         choices: ["며칠", "몇일"],
         answer: "며칠",
-        explanation: "기간을 묻는 표현도 '며칠 동안'으로 씁니다."
+        explanation: "기간을 묻는 표현도 '며칠 동안'으로 씁니다.",
+        wrongExplanation: "휴가의 길이를 물어도 '며칠'입니다. 날짜에만 '며칠'을 쓰는 것은 아닙니다.",
+        reviewHref: "/quiz/myeochil-myeotil#rule-guide"
       },
       {
         question: "생일이 몇 월 ___이니?",
         choices: ["며칠", "몇일"],
         answer: "며칠",
-        explanation: "'몇 월 며칠'이 맞습니다. '몇 월 몇일' 또는 '몇 월 몇 일'로 쓰지 않습니다."
+        explanation: "'몇 월 며칠'이 맞습니다. '몇 월 몇일' 또는 '몇 월 몇 일'로 쓰지 않습니다.",
+        wrongExplanation: "앞의 '몇 월'에 이끌려 '몇일'로 분석하지 않습니다. 날짜를 묻는 말은 '몇 월 며칠'입니다.",
+        reviewHref: "/quiz/myeochil-myeotil#rule-guide"
       },
       {
         question: "그 일 때문에 ___째 잠을 제대로 못 잤다.",
         choices: ["며칠", "몇일"],
         answer: "며칠",
-        explanation: "날짜가 이어지는 기간을 나타낼 때도 '며칠째'가 맞습니다."
+        explanation: "날짜가 이어지는 기간을 나타낼 때도 '며칠째'가 맞습니다.",
+        wrongExplanation: "접미사 '-째'가 붙어도 '몇일째'로 바뀌지 않습니다. '며칠째'로 이어 씁니다.",
+        reviewHref: "/quiz/myeochil-myeotil#rule-guide"
       },
       {
         question: "마감까지 이제 ___ 안 남았다.",
         choices: ["며칠", "몇일"],
         answer: "며칠",
-        explanation: "남은 기간을 말하는 문장이므로 '며칠'을 씁니다."
+        explanation: "남은 기간을 말하는 문장이므로 '며칠'을 씁니다.",
+        wrongExplanation: "남은 일수를 세는 문맥에서도 '몇일'은 틀린 표기입니다. '며칠 안 남았다'로 적습니다.",
+        reviewHref: "/quiz/myeochil-myeotil#rule-guide"
       },
       {
         question: "입금 확인은 보통 ___ 걸리나요?",
         choices: ["며칠", "몇일"],
         answer: "며칠",
-        explanation: "어느 정도의 기간을 묻는 말이므로 '며칠'이 맞습니다."
+        explanation: "어느 정도의 기간을 묻는 말이므로 '며칠'이 맞습니다.",
+        wrongExplanation: "소요 기간을 묻는 말도 '며칠'입니다. 숫자를 알 수 없다는 이유로 '몇일'을 만들지 않습니다.",
+        reviewHref: "/quiz/myeochil-myeotil#rule-guide"
       },
       {
         question: "그 사람을 마지막으로 본 게 ___ 전이지?",
         choices: ["며칠", "몇일"],
         answer: "며칠",
-        explanation: "지난 기간을 가리킬 때도 '며칠 전'으로 적습니다."
+        explanation: "지난 기간을 가리킬 때도 '며칠 전'으로 적습니다.",
+        wrongExplanation: "'전' 앞에서도 표기는 '며칠'입니다. '며칠 전'처럼 '전'과는 띄어 씁니다.",
+        reviewHref: "/quiz/myeochil-myeotil#rule-guide"
       },
       {
         question: "회의 날짜가 ___로 정해졌나요?",
         choices: ["며칠", "몇일"],
         answer: "며칠",
-        explanation: "특정 날짜를 묻는 말에는 '며칠'을 씁니다."
+        explanation: "특정 날짜를 묻는 말에는 '며칠'을 씁니다.",
+        wrongExplanation: "날짜에 조사 '로'를 붙여도 '몇일로'가 되지 않습니다. '며칠로'입니다.",
+        reviewHref: "/quiz/myeochil-myeotil#rule-guide"
       },
       {
         question: "배송은 주문 후 ___ 이내에 시작됩니다.",
         choices: ["며칠", "몇일"],
         answer: "며칠",
-        explanation: "배송에 걸리는 기간을 말하므로 '며칠 이내'가 맞습니다."
+        explanation: "배송에 걸리는 기간을 말하므로 '며칠 이내'가 맞습니다.",
+        wrongExplanation: "기간을 나타내는 명사 '이내' 앞에서도 '며칠'을 씁니다. '몇일 이내'는 틀립니다.",
+        reviewHref: "/quiz/myeochil-myeotil#rule-guide"
       },
       {
         question: "오늘부터 시험까지 ___ 남았어?",
         choices: ["며칠", "몇일"],
         answer: "며칠",
-        explanation: "남은 날짜 수를 물을 때는 '며칠'이 맞습니다."
+        explanation: "남은 날짜 수를 물을 때는 '며칠'이 맞습니다.",
+        wrongExplanation: "남은 날의 수를 물을 때도 '며칠'입니다. '몇일'을 날짜 수 표현으로 따로 인정하지 않습니다.",
+        reviewHref: "/quiz/myeochil-myeotil#rule-guide"
       }
     ]
   },
@@ -504,61 +623,81 @@ export const quizzes: Quiz[] = [
         question: "네가 늘 건강하길 ___.",
         choices: ["바라", "바래"],
         answer: "바라",
-        explanation: "희망이나 기원을 나타내는 말은 '바라다'이므로 '바라'가 맞습니다."
+        explanation: "희망이나 기원을 나타내는 말은 '바라다'이므로 '바라'가 맞습니다.",
+        wrongExplanation: "'바래'는 색이 변하거나 배웅하는 '바래다'의 활용형입니다. 건강을 기원하는 '바라다'의 활용형은 '바라'입니다.",
+        reviewHref: "/quiz/bara-barae#rule-guide"
       },
       {
         question: "오래 입어서 셔츠 색이 많이 ___.",
         choices: ["바랐다", "바랬다"],
         answer: "바랬다",
-        explanation: "색이 옅어졌다는 뜻은 '바래다'를 써서 '바랬다'가 맞습니다."
+        explanation: "색이 옅어졌다는 뜻은 '바래다'를 써서 '바랬다'가 맞습니다.",
+        wrongExplanation: "'바랐다'는 '바라다'의 과거형입니다. 셔츠의 색이 변했다는 뜻은 '바래다'의 '바랬다'입니다.",
+        reviewHref: "/quiz/bara-barae#rule-guide"
       },
       {
         question: "좋은 소식이 있기를 ___.",
         choices: ["바랍니다", "바랩니다"],
         answer: "바랍니다",
-        explanation: "'바라다'에 높임 표현이 붙으면 '바랍니다'가 됩니다."
+        explanation: "'바라다'에 높임 표현이 붙으면 '바랍니다'가 됩니다.",
+        wrongExplanation: "'바랩니다'는 희망을 뜻하는 '바라다'의 어간을 잘못 바꾼 표기입니다. '바라- + -ㅂ니다'를 씁니다.",
+        reviewHref: "/quiz/bara-barae#rule-guide"
       },
       {
         question: "친구를 버스 정류장까지 ___주었다.",
         choices: ["바라다", "바래다"],
         answer: "바래다",
-        explanation: "배웅한다는 뜻은 '바래다'를 씁니다."
+        explanation: "배웅한다는 뜻은 '바래다'를 씁니다.",
+        wrongExplanation: "'바라다주었다'는 배웅을 뜻하는 말이 아닙니다. '바래다주었다'로 적습니다.",
+        reviewHref: "/quiz/bara-barae#rule-guide"
       },
       {
         question: "모두가 무사히 돌아오길 ___.",
         choices: ["바라", "바래"],
         answer: "바라",
-        explanation: "기원하는 문장이므로 '바라'가 맞습니다."
+        explanation: "기원하는 문장이므로 '바라'가 맞습니다.",
+        wrongExplanation: "무사 귀환을 희망하므로 '바래'를 쓰지 않습니다. '바래다'의 색 변화·배웅 뜻과 다릅니다.",
+        reviewHref: "/quiz/bara-barae#rule-guide"
       },
       {
         question: "햇볕에 오래 두었더니 포스터가 ___.",
         choices: ["바랐다", "바랬다"],
         answer: "바랬다",
-        explanation: "색이 변한 상황에서는 '바래다'의 활용형 '바랬다'를 씁니다."
+        explanation: "색이 변한 상황에서는 '바래다'의 활용형 '바랬다'를 씁니다.",
+        wrongExplanation: "'포스터가 바랐다'는 색 변화를 표현하지 못합니다. '바래다'의 과거형 '바랬다'입니다.",
+        reviewHref: "/quiz/bara-barae#rule-guide"
       },
       {
-        question: "앞으로도 잘 부탁드리길 ___.",
+        question: "앞으로도 많은 관심을 보내 주시기 ___.",
         choices: ["바랍니다", "바랩니다"],
         answer: "바랍니다",
-        explanation: "정중하게 희망을 말할 때는 '바랍니다'가 표준 표기입니다."
+        explanation: "정중하게 희망을 말할 때는 '바랍니다'가 표준 표기입니다.",
+        wrongExplanation: "관심을 희망하는 기본형은 '바라다'입니다. '바랩니다'로 어간 모음을 바꾸지 않습니다.",
+        reviewHref: "/quiz/bara-barae#rule-guide"
       },
       {
-        question: "밤길이 어두워서 집까지 ___다.",
-        choices: ["바랐다", "바래다"],
+        question: "밤길이 어두워서 친구를 집까지 ___주었다.",
+        choices: ["바라다", "바래다"],
         answer: "바래다",
-        explanation: "집까지 데려다주거나 배웅했다는 뜻이면 '바래다'가 맞습니다."
+        explanation: "집까지 데려다주거나 배웅했다는 뜻이면 '바래다'가 맞습니다.",
+        wrongExplanation: "배웅을 뜻하는 '바래다주다'입니다. '바라다'는 기원하는 말이므로 이 이동 상황과 맞지 않습니다.",
+        reviewHref: "/quiz/bara-barae#rule-guide"
       },
       {
         question: "네 선택을 후회하지 않길 ___.",
         choices: ["바라", "바래"],
         answer: "바라",
-        explanation: "'후회하지 않기를 희망한다'는 뜻이므로 '바라'를 씁니다."
+        explanation: "'후회하지 않기를 희망한다'는 뜻이므로 '바라'를 씁니다.",
+        wrongExplanation: "후회하지 않기를 희망한다는 뜻입니다. 색이나 배웅을 나타내는 '바래'와 구별합니다.",
+        reviewHref: "/quiz/bara-barae#rule-guide"
       },
       {
         question: "낡은 사진의 색이 조금씩 ___.",
         choices: ["바랐다", "바랬다"],
         answer: "바랬다",
-        explanation: "사진 색이 옅어진다는 뜻은 '바래다'입니다."
+        explanation: "사진 색이 옅어진다는 뜻은 '바래다'입니다.",
+        wrongExplanation: "사진의 색이 옅어지는 변화이므로 '바래다'입니다. '바랐다'는 희망을 나타내는 과거형입니다.",
+        reviewHref: "/quiz/bara-barae#rule-guide"
       }
     ]
   },
@@ -568,7 +707,7 @@ export const quizzes: Quiz[] = [
     name: "맞히다/맞추다 테스트",
     title: "맞히다/맞추다 테스트 - 헷갈리는 표현 퀴즈",
     description: "맞히다와 맞추다의 차이를 퀴즈로 확인해보세요. 정답, 조립, 비교 상황별 쓰임을 정리합니다.",
-    summary: "'맞히다'는 정답을 맞게 하거나 맞게 맞는 것이고, '맞추다'는 서로 맞게 조정하는 것이다.",
+    summary: "'맞히다'는 정답을 알아내거나 적중시키는 것, '맞추다'는 조정하거나 비교하는 것이다.",
     tenSecondSummary: "정답을 고르는 것은 '맞히다', 퍼즐이나 일정처럼 서로 들어맞게 조정하는 것은 '맞추다'입니다. '문제를 맞히다', '시간을 맞추다'로 기억하세요.",
     seoContent:
       "맞히다/맞추다는 의미가 가까워 보여도 실제 쓰임은 다릅니다. '맞히다'는 정답을 알아내거나, 목표에 닿게 하거나, 비를 맞게 하는 상황에서 씁니다. '퀴즈 정답을 맞히다', '화살을 과녁에 맞히다', '아이에게 주사를 맞히다'가 그 예입니다. 반면 '맞추다'는 둘 이상의 것을 서로 어긋나지 않게 하거나 기준에 맞게 조정하는 뜻입니다. '시계를 맞추다', '일정을 맞추다', '퍼즐을 맞추다', '옷을 맞추다'처럼 씁니다. 이 테스트는 시험, 업무 일정, 쇼핑, 게임에서 자주 나오는 예문을 중심으로 만들었습니다. 정답을 알아내는지, 여러 대상을 조정하거나 결합하는지 확인하면 대부분 쉽게 구분할 수 있습니다.",
@@ -581,64 +720,84 @@ export const quizzes: Quiz[] = [
     ],
     questions: [
       {
-        question: "그는 어려운 문제의 정답을 바로 ___.",
+        question: "그는 어려운 문제를 풀어 정답을 정확히 ___. (옳은 답을 알아냈다는 뜻의 말을 고르세요.)",
         choices: ["맞혔다", "맞췄다"],
         answer: "맞혔다",
-        explanation: "정답을 알아낸 상황이므로 '맞히다'의 활용형 '맞혔다'가 맞습니다."
+        explanation: "정답을 알아낸 상황이므로 '맞히다'의 활용형 '맞혔다'가 맞습니다.",
+        wrongExplanation: "이 문장은 답안끼리 비교한 것이 아니라 옳은 답을 알아낸 상황입니다. 비교할 때라면 '답을 맞췄다'도 쓸 수 있습니다.",
+        reviewHref: "/quiz/machida-matchuda#rule-guide"
       },
       {
         question: "회의 시간을 서로 ___ 보자.",
         choices: ["맞혀", "맞춰"],
         answer: "맞춰",
-        explanation: "여러 사람의 시간을 조정하는 상황이므로 '맞추다'를 씁니다."
+        explanation: "여러 사람의 시간을 조정하는 상황이므로 '맞추다'를 씁니다.",
+        wrongExplanation: "'맞혀'는 정답을 알아내거나 적중시키는 뜻입니다. 회의 일정을 서로 조정하는 뜻에는 '맞춰'입니다.",
+        reviewHref: "/quiz/machida-matchuda#rule-guide"
       },
       {
         question: "퍼즐 조각을 하나씩 ___.",
         choices: ["맞혔다", "맞췄다"],
         answer: "맞췄다",
-        explanation: "조각들이 들어맞게 결합하는 상황은 '맞추다'가 맞습니다."
+        explanation: "조각들이 들어맞게 결합하는 상황은 '맞추다'가 맞습니다.",
+        wrongExplanation: "퍼즐 조각을 결합하는 것은 정답을 대는 행위와 다릅니다. 조각이 들어맞게 '맞췄다'입니다.",
+        reviewHref: "/quiz/machida-matchuda#rule-guide"
       },
       {
         question: "화살을 과녁 한가운데에 ___.",
         choices: ["맞혔다", "맞췄다"],
         answer: "맞혔다",
-        explanation: "목표에 닿게 했다는 뜻이므로 '맞히다'를 씁니다."
+        explanation: "목표에 닿게 했다는 뜻이므로 '맞히다'를 씁니다.",
+        wrongExplanation: "날아간 화살이 과녁에 적중하게 한 뜻에는 '맞혔다'입니다. 위치나 규격을 조정하는 '맞췄다'와 다릅니다.",
+        reviewHref: "/quiz/machida-matchuda#rule-guide"
       },
       {
         question: "새 정장을 몸에 맞게 ___.",
         choices: ["맞혔다", "맞췄다"],
         answer: "맞췄다",
-        explanation: "옷을 치수에 맞게 제작하거나 조정하는 말은 '맞추다'입니다."
+        explanation: "옷을 치수에 맞게 제작하거나 조정하는 말은 '맞추다'입니다.",
+        wrongExplanation: "치수에 맞게 옷을 제작한 뜻입니다. 옳은 답을 대거나 주사를 맞게 하는 '맞혔다'와 다릅니다.",
+        reviewHref: "/quiz/machida-matchuda#rule-guide"
       },
       {
         question: "아이에게 예방 주사를 ___.",
         choices: ["맞혔다", "맞췄다"],
         answer: "맞혔다",
-        explanation: "주사를 맞게 한다는 뜻은 '맞히다'를 씁니다."
+        explanation: "주사를 맞게 한다는 뜻은 '맞히다'를 씁니다.",
+        wrongExplanation: "예방 주사를 맞게 하는 사동 표현은 '맞히다'입니다. 접종 시간을 조정하면 '시간을 맞추다'라고 합니다.",
+        reviewHref: "/quiz/machida-matchuda#rule-guide"
       },
       {
         question: "알람을 오전 7시에 ___.",
         choices: ["맞혔다", "맞췄다"],
         answer: "맞췄다",
-        explanation: "시간이나 설정을 조정하는 상황이므로 '맞췄다'가 맞습니다."
+        explanation: "시간이나 설정을 조정하는 상황이므로 '맞췄다'가 맞습니다.",
+        wrongExplanation: "알람의 설정을 기준 시각에 맞게 조정했습니다. 정답이나 적중을 말하는 '맞혔다'와 다릅니다.",
+        reviewHref: "/quiz/machida-matchuda#rule-guide"
       },
       {
         question: "스무고개에서 친구의 직업을 ___.",
         choices: ["맞혔다", "맞췄다"],
         answer: "맞혔다",
-        explanation: "정답을 알아맞힌 상황이므로 '맞혔다'를 씁니다."
+        explanation: "정답을 알아맞힌 상황이므로 '맞혔다'를 씁니다.",
+        wrongExplanation: "스무고개는 추측하여 옳은 답을 대는 게임입니다. 두 답을 서로 비교하는 '맞췄다'의 뜻이 아닙니다.",
+        reviewHref: "/quiz/machida-matchuda#rule-guide"
       },
       {
         question: "두 문장의 표현을 자연스럽게 ___.",
         choices: ["맞혔다", "맞췄다"],
         answer: "맞췄다",
-        explanation: "표현을 서로 어울리게 조정하는 상황은 '맞추다'가 맞습니다."
+        explanation: "표현을 서로 어울리게 조정하는 상황은 '맞추다'가 맞습니다.",
+        wrongExplanation: "문장 표현을 서로 어울리게 조정하는 뜻입니다. 답을 알아내는 '맞혔다'가 아닙니다.",
+        reviewHref: "/quiz/machida-matchuda#rule-guide"
       },
       {
-        question: "선생님은 학생에게 답을 ___ 보라고 했다.",
+        question: "선생님은 학생에게 수수께끼의 정답을 알아___ 보라고 했다.",
         choices: ["맞혀", "맞춰"],
         answer: "맞혀",
-        explanation: "답을 알아내 보라는 뜻이므로 '맞혀'가 맞습니다."
+        explanation: "수수께끼의 답을 추측하여 알아내는 뜻이므로 '알아맞혀'가 맞습니다. 답안끼리 비교할 때의 '맞춰'와 구별합니다.",
+        wrongExplanation: "'알아맞춰'는 정답을 추측해 알아내는 표준 표현이 아닙니다. '친구와 답을 맞춰 보다'는 답안 비교라는 다른 뜻입니다.",
+        reviewHref: "/quiz/machida-matchuda#rule-guide"
       }
     ]
   },
@@ -657,68 +816,88 @@ export const quizzes: Quiz[] = [
       "대화로써 오해를 풀었다.",
       "오늘로써 입사 1년이 되었다.",
       "학생으로서 지켜야 할 규칙이 있다.",
-      "증거 자료로써 충분하다."
+      "증거 자료로서 충분하다."
     ],
     questions: [
       {
         question: "대표___ 이번 결정에 책임을 지겠습니다.",
         choices: ["로서", "로써"],
         answer: "로서",
-        explanation: "대표라는 자격이나 지위를 나타내므로 '로서'가 맞습니다."
+        explanation: "대표라는 자격이나 지위를 나타내므로 '로서'가 맞습니다.",
+        wrongExplanation: "대표라는 자격은 도구나 수단이 아닙니다. '대표로써' 대신 '대표로서'를 씁니다.",
+        reviewHref: "/quiz/roseo-rosse#rule-guide"
       },
       {
         question: "그는 말___ 상대를 설득했다.",
         choices: ["로서", "로써"],
         answer: "로써",
-        explanation: "말을 수단으로 사용한 상황이므로 '로써'를 씁니다."
+        explanation: "말을 수단으로 사용한 상황이므로 '로써'를 씁니다.",
+        wrongExplanation: "말을 이용한 설득이라는 수단입니다. '말로서'는 자격을 말하므로 이 문맥과 다릅니다.",
+        reviewHref: "/quiz/roseo-rosse#rule-guide"
       },
       {
         question: "오늘___ 프로젝트가 끝났다.",
         choices: ["로서", "로써"],
         answer: "로써",
-        explanation: "오늘을 기준 시점으로 삼는 표현이므로 '오늘로써'가 맞습니다."
+        explanation: "오늘을 기준 시점으로 삼는 표현이므로 '오늘로써'가 맞습니다.",
+        wrongExplanation: "오늘을 마감의 기준으로 삼습니다. 사람의 지위나 자격을 나타내는 '로서'와 구별합니다.",
+        reviewHref: "/quiz/roseo-rosse#rule-guide"
       },
       {
         question: "부모___ 아이를 지켜야 한다.",
         choices: ["로서", "로써"],
         answer: "로서",
-        explanation: "부모라는 자격과 입장을 나타내므로 '로서'를 씁니다."
+        explanation: "부모라는 자격과 입장을 나타내므로 '로서'를 씁니다.",
+        wrongExplanation: "부모의 입장과 자격을 말합니다. 부모를 도구로 삼는 뜻의 '로써'가 아닙니다.",
+        reviewHref: "/quiz/roseo-rosse#rule-guide"
       },
       {
         question: "자료___ 사실을 증명할 수 있다.",
         choices: ["로서", "로써"],
         answer: "로써",
-        explanation: "자료를 수단이나 근거로 삼는 상황이므로 '로써'가 맞습니다."
+        explanation: "자료를 수단이나 근거로 삼는 상황이므로 '로써'가 맞습니다.",
+        wrongExplanation: "자료를 이용해 증명하는 수단입니다. '자료로서 충분하다'처럼 자료의 자격을 평가하는 문장과 다릅니다.",
+        reviewHref: "/quiz/roseo-rosse#rule-guide"
       },
       {
         question: "친구___ 그런 말은 하지 말았어야 했다.",
         choices: ["로서", "로써"],
         answer: "로서",
-        explanation: "친구라는 관계나 입장을 나타내므로 '로서'가 맞습니다."
+        explanation: "친구라는 관계나 입장을 나타내므로 '로서'가 맞습니다.",
+        wrongExplanation: "친구의 입장에서 말하는 뜻입니다. 친구를 수단으로 삼는 '로써'와 다릅니다.",
+        reviewHref: "/quiz/roseo-rosse#rule-guide"
       },
       {
         question: "노력___ 한계를 넘었다.",
         choices: ["로서", "로써"],
         answer: "로써",
-        explanation: "노력을 수단으로 삼아 결과를 이룬 것이므로 '로써'를 씁니다."
+        explanation: "노력을 수단으로 삼아 결과를 이룬 것이므로 '로써'를 씁니다.",
+        wrongExplanation: "노력을 통해 한계를 넘었다는 방법입니다. 어떤 자격을 나타내는 '로서'가 아닙니다.",
+        reviewHref: "/quiz/roseo-rosse#rule-guide"
       },
       {
-        question: "이로___ 모든 절차가 마무리되었습니다.",
+        question: "이___ 모든 절차가 마무리되었습니다.",
         choices: ["로서", "로써"],
         answer: "로써",
-        explanation: "'이로써'는 이것을 기준이나 계기로 하여 마무리된다는 뜻입니다."
+        explanation: "'이로써'는 이것을 기준이나 계기로 하여 마무리된다는 뜻입니다.",
+        wrongExplanation: "이것으로 절차가 끝난다는 뜻에는 '이로써'입니다. '이로서'는 같은 완료 수단·계기의 뜻이 아닙니다.",
+        reviewHref: "/quiz/roseo-rosse#rule-guide"
       },
       {
         question: "전문가___ 조언을 드리겠습니다.",
         choices: ["로서", "로써"],
         answer: "로서",
-        explanation: "전문가라는 자격을 나타내므로 '로서'가 맞습니다."
+        explanation: "전문가라는 자격을 나타내므로 '로서'가 맞습니다.",
+        wrongExplanation: "전문가의 자격으로 조언한다는 뜻입니다. 도구의 뜻인 '로써'를 쓰지 않습니다.",
+        reviewHref: "/quiz/roseo-rosse#rule-guide"
       },
       {
         question: "글___ 마음을 전했다.",
         choices: ["로서", "로써"],
         answer: "로써",
-        explanation: "글을 전달 수단으로 사용했으므로 '로써'가 맞습니다."
+        explanation: "글을 전달 수단으로 사용했으므로 '로써'가 맞습니다.",
+        wrongExplanation: "글을 전달 방법으로 썼습니다. 글의 자격을 평가하는 '로서'의 뜻과 다릅니다.",
+        reviewHref: "/quiz/roseo-rosse#rule-guide"
       }
     ]
   },
@@ -744,65 +923,84 @@ export const quizzes: Quiz[] = [
         question: "신청서는 오늘 안에 ___ 제출해야 합니다.",
         choices: ["반드시", "반듯이"],
         answer: "반드시",
-        explanation: "'꼭 제출해야 한다'는 뜻이므로 '반드시'가 맞습니다."
+        explanation: "'꼭 제출해야 한다'는 뜻이므로 '반드시'가 맞습니다.",
+        wrongExplanation: "여기서는 제출의 의무를 강조합니다. 종이를 가지런히 내는 모양을 뜻하는 '반듯이'와 다릅니다.",
+        reviewHref: "/quiz/bandeusi-bandeusi#rule-guide"
       },
       {
-        question: "허리를 ___ 펴고 앉으세요.",
+        question: "허리를 ___ 펴고 앉으세요. (곧고 바른 모양을 뜻하는 말을 고르세요.)",
         choices: ["반드시", "반듯이"],
         answer: "반듯이",
-        explanation: "자세를 바르게 하라는 뜻이므로 '반듯이'를 씁니다."
+        explanation: "자세를 바르게 하라는 뜻이므로 '반듯이'를 씁니다.",
+        wrongExplanation: "이 문제는 자세를 곧게 하라는 뜻입니다. '꼭 펴라'라는 의무를 말할 때는 '반드시'도 가능하므로 모양의 뜻으로 읽어야 합니다.",
+        reviewHref: "/quiz/bandeusi-bandeusi#rule-guide"
       },
       {
         question: "약속은 ___ 지키겠습니다.",
         choices: ["반드시", "반듯이"],
         answer: "반드시",
-        explanation: "꼭 지키겠다는 다짐이므로 '반드시'가 맞습니다."
+        explanation: "꼭 지키겠다는 다짐이므로 '반드시'가 맞습니다.",
+        wrongExplanation: "약속을 꼭 지키겠다는 다짐입니다. 비뚤어지지 않은 모양을 뜻하는 '반듯이'와 다릅니다.",
+        reviewHref: "/quiz/bandeusi-bandeusi#rule-guide"
       },
       {
-        question: "자를 대고 선을 ___ 그었다.",
+        question: "자를 대고 선을 ___ 그었다. (곧고 바른 모양을 뜻하는 말을 고르세요.)",
         choices: ["반드시", "반듯이"],
         answer: "반듯이",
-        explanation: "선을 곧고 바르게 그었다는 뜻이므로 '반듯이'가 맞습니다."
+        explanation: "선을 곧고 바르게 그었다는 뜻이므로 '반듯이'가 맞습니다.",
+        wrongExplanation: "자를 대어 곧은 선을 그린 모양을 말합니다. 선을 꼭 그렸다는 뜻으로 바꾸면 '반드시'도 가능한 별도 문맥입니다.",
+        reviewHref: "/quiz/bandeusi-bandeusi#rule-guide"
       },
       {
         question: "회의 참석자는 ___ 신분증을 지참하세요.",
         choices: ["반드시", "반듯이"],
         answer: "반드시",
-        explanation: "꼭 지참해야 한다는 안내이므로 '반드시'를 씁니다."
+        explanation: "꼭 지참해야 한다는 안내이므로 '반드시'를 씁니다.",
+        wrongExplanation: "신분증을 꼭 가져오라는 요구입니다. 곧고 가지런한 모양인 '반듯이'와 다릅니다.",
+        reviewHref: "/quiz/bandeusi-bandeusi#rule-guide"
       },
       {
-        question: "책들을 책장에 ___ 꽂아 두었다.",
+        question: "책들을 책장에 ___ 꽂아 두었다. (곧고 바른 모양을 뜻하는 말을 고르세요.)",
         choices: ["반드시", "반듯이"],
         answer: "반듯이",
-        explanation: "책을 가지런하고 바르게 꽂은 상태이므로 '반듯이'가 맞습니다."
+        explanation: "책을 가지런하고 바르게 꽂은 상태이므로 '반듯이'가 맞습니다.",
+        wrongExplanation: "이 문제는 책의 가지런한 배열을 말합니다. 꼭 꽂아 두었다는 의무의 뜻은 '반드시'입니다.",
+        reviewHref: "/quiz/bandeusi-bandeusi#rule-guide"
       },
       {
         question: "이번에는 ___ 성공하고 싶다.",
         choices: ["반드시", "반듯이"],
         answer: "반드시",
-        explanation: "꼭 성공하겠다는 의지를 나타내므로 '반드시'가 맞습니다."
+        explanation: "꼭 성공하겠다는 의지를 나타내므로 '반드시'가 맞습니다.",
+        wrongExplanation: "성공에 대한 강한 의지를 나타냅니다. 성공의 모양이 곧다는 뜻인 '반듯이'가 아닙니다.",
+        reviewHref: "/quiz/bandeusi-bandeusi#rule-guide"
       },
       {
-        question: "구겨진 종이를 펴서 ___ 접었다.",
+        question: "구겨진 종이를 펴서 ___ 접었다. (곧고 바른 모양을 뜻하는 말을 고르세요.)",
         choices: ["반드시", "반듯이"],
         answer: "반듯이",
-        explanation: "모양을 바르게 접었다는 뜻이므로 '반듯이'를 씁니다."
+        explanation: "모양을 바르게 접었다는 뜻이므로 '반듯이'를 씁니다.",
+        wrongExplanation: "종이의 곧고 바른 모양을 말합니다. 종이를 꼭 접었다는 뜻의 '반드시'와 구별합니다.",
+        reviewHref: "/quiz/bandeusi-bandeusi#rule-guide"
       },
       {
         question: "안전 수칙은 ___ 지켜야 합니다.",
         choices: ["반드시", "반듯이"],
         answer: "반드시",
-        explanation: "꼭 지켜야 한다는 의미이므로 '반드시'가 맞습니다."
+        explanation: "꼭 지켜야 한다는 의미이므로 '반드시'가 맞습니다.",
+        wrongExplanation: "수칙을 꼭 준수해야 한다는 뜻입니다. 물체나 자세가 바른 모양인 '반듯이'와 다릅니다.",
+        reviewHref: "/quiz/bandeusi-bandeusi#rule-guide"
       },
       {
-        question: "면접장에서는 자세를 ___ 유지했다.",
+        question: "면접장에서는 자세를 ___ 유지했다. (곧고 바른 모양을 뜻하는 말을 고르세요.)",
         choices: ["반드시", "반듯이"],
         answer: "반듯이",
-        explanation: "자세를 바르고 곧게 유지했다는 뜻이므로 '반듯이'가 맞습니다."
+        explanation: "자세를 바르고 곧게 유지했다는 뜻이므로 '반듯이'가 맞습니다.",
+        wrongExplanation: "면접 때 자세가 바르고 곧았다는 뜻입니다. 꼭 유지했다는 의무의 뜻인 '반드시'와 구별합니다.",
+        reviewHref: "/quiz/bandeusi-bandeusi#rule-guide"
       }
     ]
-  },
-  ...additionalQuizzes
+  }
 ];
 
 export function getQuizBySlug(slug: QuizSlug): Quiz | undefined {
@@ -810,5 +1008,13 @@ export function getQuizBySlug(slug: QuizSlug): Quiz | undefined {
 }
 
 export function getRelatedQuizzes(currentSlug: QuizSlug, count = 3): Quiz[] {
-  return quizzes.filter((quiz) => quiz.slug !== currentSlug).slice(0, count);
+  const currentIndex = quizzes.findIndex((quiz) => quiz.slug === currentSlug);
+
+  if (currentIndex < 0) {
+    return quizzes.slice(0, count);
+  }
+
+  return Array.from({ length: Math.min(count, quizzes.length - 1) }, (_, offset) => {
+    return quizzes[(currentIndex + offset + 1) % quizzes.length];
+  });
 }

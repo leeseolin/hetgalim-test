@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const footerLinks = [
+  { href: "/guide/common-mistakes", label: "빠른 맞춤법" },
   { href: "/about", label: "사이트 소개" },
   { href: "/privacy", label: "개인정보 처리방침" },
   { href: "/terms", label: "이용약관" }

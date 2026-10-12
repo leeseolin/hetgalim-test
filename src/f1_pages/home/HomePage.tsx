@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AdSenseScript } from "@/f5_shared/ui/AdSenseScript";
 import { quizzes } from "@/f4_entities/quiz/quizzes";
 import { QuizCard } from "@/f5_shared/ui/QuizCard";
 
@@ -8,6 +9,7 @@ export function HomePage() {
 
   return (
     <main>
+      <AdSenseScript />
       <section className="home-hero">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1.35fr_0.65fr] lg:items-end lg:py-24">
           <div>
@@ -38,13 +40,28 @@ export function HomePage() {
         </div>
       </section>
 
+      <section className="border-b border-[var(--line)] bg-[var(--accent-soft)]">
+        <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <p className="home-eyebrow">한 번에 실력 점검</p>
+            <h2 className="mt-3 text-2xl font-black tracking-[-0.03em] sm:text-3xl">자주 틀리는 맞춤법 20개 총정리</h2>
+            <p className="mt-3 max-w-2xl leading-7 text-[var(--muted)]">
+              낫다/낳다부터 설거지/설겆이까지, 20문제 종합 테스트와 표현별 구분법을 한 페이지에서 확인하세요.
+            </p>
+          </div>
+          <Link className="primary-action inline-flex min-h-12 shrink-0 items-center justify-center rounded-lg px-6 font-bold" href="/guide/common-mistakes">
+            종합 테스트 풀기 →
+          </Link>
+        </div>
+      </section>
+
       <section id="all-tests" className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24" aria-labelledby="test-list-title">
         <div className="section-intro">
           <div>
             <p className="home-eyebrow">전체 테스트</p>
             <h2 id="test-list-title" className="mt-3 text-3xl font-black tracking-[-0.04em] sm:text-4xl">자주 틀리는 표현부터</h2>
           </div>
-          <p>각 테스트는 10문제로 구성되어 있으며, 결과에서 틀린 문제의 해설을 바로 확인할 수 있습니다.</p>
+          <p>핵심 테스트 {quizzes.length}개는 각각 10문제로 구성되어 있으며, 풀이 후 전체 정답과 해설을 다시 볼 수 있습니다.</p>
         </div>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {popularQuizzes.map((quiz) => <QuizCard key={quiz.slug} quiz={quiz} />)}

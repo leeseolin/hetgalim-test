@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     template: "%s | 헷갈리는 말 테스트"
   },
   description: "한국인이 자주 헷갈리는 맞춤법과 표현을 짧은 퀴즈로 확인하는 사이트입니다.",
+  alternates: {
+    canonical: "/"
+  },
   other: {
     "google-adsense-account": "ca-pub-5220732377881882"
   },
@@ -34,13 +37,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <head>
-        <script
-          async
-          crossOrigin="anonymous"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5220732377881882"
-        />
-      </head>
       <body>
         <Header />
         {children}

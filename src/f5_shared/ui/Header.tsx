@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const navItems = [
   { href: "/", label: "테스트" },
+  { href: "/guide/common-mistakes", label: "빠른 맞춤법" },
   { href: "/about", label: "소개" }
 ];
 
