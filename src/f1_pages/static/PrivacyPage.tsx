@@ -4,7 +4,7 @@ export function PrivacyPage() {
   return (
     <StaticPageShell
       title="개인정보처리방침"
-      description="현재 회원가입, 로그인, 데이터베이스 저장 없이 운영되는 사이트입니다."
+      description="회원가입 없이 이용하며, 방문 통계와 광고 서비스의 데이터 사용 방식을 안내합니다."
     >
       <section aria-labelledby="no-account">
         <h2 id="no-account" className="text-xl font-bold text-[var(--foreground)]">
@@ -13,6 +13,21 @@ export function PrivacyPage() {
         <p className="mt-3">
           현재 헷갈리는 말 테스트는 회원가입, 로그인, 댓글, 결제 기능을 제공하지 않으며 사용자의 이름, 이메일,
           비밀번호 같은 개인정보를 직접 저장하지 않습니다. 퀴즈 결과도 서버나 데이터베이스에 저장하지 않습니다.
+        </p>
+      </section>
+      <section aria-labelledby="analytics" className="mt-8">
+        <h2 id="analytics" className="text-xl font-bold text-[var(--foreground)]">
+          Vercel 방문 통계
+        </h2>
+        <p className="mt-3">
+          사이트 이용 현황과 콘텐츠 개선을 위해 Vercel Web Analytics를 사용합니다. 방문한 페이지 주소, 유입 경로,
+          기기와 브라우저 종류, 대략적인 국가 정보 등을 바탕으로 방문 수와 페이지 조회 수를 집계합니다.
+          퀴즈 답안과 점수는 통계 이벤트로 전송하지 않습니다.
+        </p>
+        <p className="mt-3">
+          Vercel의 공식 안내에 따르면 이 방문 통계는 제3자 쿠키를 사용하지 않으며, 익명 집계 통계를 제공합니다.
+          자세한 데이터 처리 방식은
+          {" "}<a className="font-semibold text-[var(--accent-strong)] underline underline-offset-4" href="https://vercel.com/docs/analytics/privacy-policy" target="_blank" rel="noreferrer">Vercel Web Analytics 개인정보 안내</a>에서 확인할 수 있습니다.
         </p>
       </section>
       <section aria-labelledby="cookies" className="mt-8">
@@ -45,7 +60,7 @@ export function PrivacyPage() {
           {" "}<a className="font-bold text-[var(--accent-strong)]" href="https://github.com/leeseolin/hetgalim-test/issues" target="_blank" rel="noreferrer">공개 이슈 페이지</a>를 이용해 주세요.
           정책 내용이 변경되면 이 페이지와 시행일을 함께 갱신합니다.
         </p>
-        <p className="mt-3 text-sm">시행일: 2026년 8월 27일</p>
+        <p className="mt-3 text-sm">시행일: 2026년 10월 12일 — Vercel 방문 통계 안내 추가</p>
       </section>
     </StaticPageShell>
   );

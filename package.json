@@ -13,6 +13,7 @@
     "build:codes": "echo \"No code build configured\""
   },
   "dependencies": {
+    "@vercel/analytics": "2.0.1",
     "next": "16.2.1",
     "react": "19.2.1",
     "react-dom": "19.2.1"
