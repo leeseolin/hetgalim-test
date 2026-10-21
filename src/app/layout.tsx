@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { Footer } from "@/f5_shared/ui/Footer";
 import { Header } from "@/f5_shared/ui/Header";
+import { siteName, siteOpenGraph, siteUrl } from "@/f5_shared/config/siteMetadata";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://hetgalim-test-chi.vercel.app"),
+  metadataBase: siteUrl,
+  applicationName: siteName,
   title: {
     default: "헷갈리는 말 테스트",
     template: "%s | 헷갈리는 말 테스트"
@@ -23,11 +25,12 @@ export const metadata: Metadata = {
     }
   },
   openGraph: {
+    ...siteOpenGraph,
     title: "헷갈리는 말 테스트",
-    description: "되/돼, 안/않, 왠/웬처럼 헷갈리는 한국어 표현을 퀴즈로 확인해보세요.",
-    siteName: "헷갈리는 말 테스트",
-    locale: "ko_KR",
-    type: "website"
+    description: "되/돼, 안/않, 왠/웬처럼 헷갈리는 한국어 표현을 퀴즈로 확인해보세요."
+  },
+  twitter: {
+    card: "summary_large_image"
   }
 };
 

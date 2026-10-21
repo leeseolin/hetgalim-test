@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PrivacyPage } from "@/f1_pages/static/PrivacyPage";
+import { siteOpenGraph } from "@/f5_shared/config/siteMetadata";
 
 export const metadata: Metadata = {
   title: "개인정보처리방침",
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
     canonical: "/privacy"
   },
   openGraph: {
+    ...siteOpenGraph,
     title: "개인정보처리방침 - 헷갈리는 말 테스트",
     description: "회원가입과 DB 저장 없이 운영되는 현재 정책 및 Google 광고 서비스의 데이터 사용 방식을 안내합니다."
   }

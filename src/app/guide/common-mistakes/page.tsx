@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CommonMistakesGuidePage } from "@/f1_pages/guide/CommonMistakesGuidePage";
+import { siteOpenGraph } from "@/f5_shared/config/siteMetadata";
 
 export const metadata: Metadata = {
   title: "자주 틀리는 맞춤법 20개 총정리와 종합 테스트",
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
     canonical: "/guide/common-mistakes"
   },
   openGraph: {
+    ...siteOpenGraph,
     title: "자주 틀리는 맞춤법 20개 총정리",
     description: "일상에서 자주 틀리는 표현 20개를 한 번에 점검하고 표현별 예문으로 복습합니다.",
     type: "article"

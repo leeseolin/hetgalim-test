@@ -4,6 +4,7 @@ import { QuizDetailPage } from "@/f1_pages/quiz-detail/QuizDetailPage";
 import { additionalQuizzes } from "@/f4_entities/quiz/additionalQuizzes";
 import { getQuizBySlug, quizzes } from "@/f4_entities/quiz/quizzes";
 import type { QuizSlug } from "@/f4_entities/quiz/types";
+import { siteOpenGraph } from "@/f5_shared/config/siteMetadata";
 
 type PageProps = {
   params: Promise<{
@@ -36,6 +37,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: `/quiz/${quiz.slug}`
     },
     openGraph: {
+      ...siteOpenGraph,
       title: quiz.title,
       description: quiz.description,
       type: "article"

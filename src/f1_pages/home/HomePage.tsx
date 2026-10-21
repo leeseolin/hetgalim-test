@@ -2,6 +2,7 @@ import Link from "next/link";
 import { AdSenseScript } from "@/f5_shared/ui/AdSenseScript";
 import { quizzes } from "@/f4_entities/quiz/quizzes";
 import { QuizCard } from "@/f5_shared/ui/QuizCard";
+import { WebsiteStructuredData } from "./WebsiteStructuredData";
 
 export function HomePage() {
   const popularQuizzes = quizzes.slice(0, 6);
@@ -9,6 +10,7 @@ export function HomePage() {
 
   return (
     <main>
+      <WebsiteStructuredData />
       <AdSenseScript />
       <section className="home-hero">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1.35fr_0.65fr] lg:items-end lg:py-24">

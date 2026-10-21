@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { TermsPage } from "@/f1_pages/static/TermsPage";
+import { siteOpenGraph } from "@/f5_shared/config/siteMetadata";
 
 export const metadata: Metadata = {
   title: "이용 안내",
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
     canonical: "/terms"
   },
   openGraph: {
+    ...siteOpenGraph,
     title: "이용 안내 - 헷갈리는 말 테스트",
     description: "퀴즈와 해설 이용 시 알아야 할 기본 안내를 제공합니다."
   }

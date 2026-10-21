@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { AboutPage } from "@/f1_pages/static/AboutPage";
+import { siteOpenGraph } from "@/f5_shared/config/siteMetadata";
 
 export const metadata: Metadata = {
   title: "사이트 소개",
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
     canonical: "/about"
   },
   openGraph: {
+    ...siteOpenGraph,
     title: "사이트 소개 - 헷갈리는 말 테스트",
     description: "맞춤법과 표현 차이를 짧은 퀴즈와 해설로 확인하는 사이트의 목적과 사용 방법을 안내합니다."
   }
