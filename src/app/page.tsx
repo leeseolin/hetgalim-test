@@ -2,14 +2,17 @@ import type { Metadata } from "next";
 import { HomePage } from "@/f1_pages/home/HomePage";
 import { siteOpenGraph } from "@/f5_shared/config/siteMetadata";
 
+const title = "헷갈리는 말 테스트 — 맞춤법 퀴즈와 정답 해설";
+const description = "되/돼, 안/않 등 헷갈리는 맞춤법을 10문제씩 풀어보세요. 회원가입 없이 정답·해설과 20문제 종합 테스트를 제공합니다.";
+
 export const metadata: Metadata = {
-  title: "헷갈리는 말 테스트 - 한국어 맞춤법 퀴즈",
-  description: "되/돼, 안/않, 왠/웬 등 한국인이 자주 헷갈리는 맞춤법을 빠르게 테스트하고 해설을 확인하세요.",
+  title: { absolute: title },
+  description,
   openGraph: {
     ...siteOpenGraph,
     url: "/",
-    title: "헷갈리는 말 테스트",
-    description: "되/돼, 안/않, 왠/웬처럼 헷갈리는 한국어 표현을 짧은 퀴즈와 해설로 익혀보세요."
+    title,
+    description
   }
 };
 

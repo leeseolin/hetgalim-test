@@ -17,11 +17,11 @@ export function HomePage() {
           <div>
             <p className="home-eyebrow">3분 맞춤법 점검</p>
             <h1 className="mt-5 max-w-3xl text-5xl font-black leading-[1.08] tracking-[-0.055em] sm:text-7xl">
-              헷갈렸던 표현,<br />퀴즈로 확실하게.
+              헷갈리는 맞춤법,<br />퀴즈로 확인하세요.
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-[var(--muted)]">
-              되와 돼, 안과 않처럼 쓸 때마다 망설여지는 표현을 짧은 문제와 해설로 익혀보세요.
-              회원가입 없이 바로 시작할 수 있습니다.
+              되/돼, 안/않 등 헷갈리는 맞춤법을 10문제씩 풀어보세요.
+              회원가입 없이 정답·해설과 20문제 종합 테스트를 제공합니다.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link className="primary-action inline-flex min-h-12 items-center justify-center rounded-lg px-6 font-bold" href={`/quiz/${featuredQuiz.slug}`}>
